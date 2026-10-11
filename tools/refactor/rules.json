@@ -89,9 +89,9 @@
     "catalogue": [],
     "handRolled": [
       {"element": "table", "ownedBy": "RecordsTable"},
-      {"element": "input", "ownedBy": "FormField", "unlessAttributes": ["type=\"checkbox\"", "type=\"radio\"", "type=\"file\"", "type=\"hidden\""]},
-      {"element": "select", "ownedBy": "FormField"},
-      {"element": "textarea", "ownedBy": "FormField"},
+      {"element": "input", "ownedBy": "FormField", "unlessUnlabelled": true, "unlessAttributes": ["type=\"checkbox\"", "type=\"radio\"", "type=\"file\"", "type=\"hidden\""]},
+      {"element": "select", "ownedBy": "FormField", "unlessUnlabelled": true},
+      {"element": "textarea", "ownedBy": "FormField", "unlessUnlabelled": true},
       {"element": "h1", "ownedBy": "PageHeader", "unlessGlobs": ["**/routes/(landing)/**"]},
       {"element": "h2", "ownedBy": "SectionHeader"},
       {"element": "h3", "ownedBy": "SectionHeader"}
