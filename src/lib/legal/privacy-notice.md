@@ -58,7 +58,7 @@ We do not sell your information.
 
 ## Outside the UK
 
-Some of our providers process data outside the UK. Anthropic, Twilio, Vapi and Resend may process your information in the United States [check: Supabase, Amazon SES, Microsoft 365 and Azure regions]. For the EU we rely on UK adequacy regulations. For the US we rely on the UK-US data bridge for certified companies, or the UK International Data Transfer Agreement or Addendum. You can ask us for details.
+Some of our providers process data outside the UK. Anthropic, Twilio, Vapi, Resend and Vercel (our website host) may process your information in the United States. For the EU we rely on UK adequacy regulations. For the US we rely on the UK-US data bridge for certified companies, or the UK International Data Transfer Agreement or Addendum. You can ask us for details.
 
 ## How long we keep it
 
