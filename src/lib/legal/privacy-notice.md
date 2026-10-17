@@ -1,6 +1,6 @@
 # Privacy notice: Jewel Bespoke Build Ltd
 
-Last updated: [date of publication]. Version 1.0.
+Last updated: 17 October 2026. Version 1.0.
 
 **Who we are.** Jewel Bespoke Build Ltd is the data controller for the personal information described here. Company number 13752749. ICO registration ZB645142. Registered office: Argent House, 175 Hook Rise South, Surbiton, KT6 7LD.
 
@@ -49,9 +49,9 @@ Only what is needed, with:
     - Xero (invoices and accounts) and Dext (supplier invoices and receipts)
     - Twilio, Vapi and Resend (phone lines, the automated assistant and call summaries)
     - WhatsApp (messages and photos between our site team)
-    - our website host [check: who], Supabase (website images) and Amazon Web Services (sending contact form messages to us)
+    - Vercel (our website host) and Supabase (website images and the enquiries sent through our contact form)
     - Anthropic (Claude AI tools)
-    - Your Business Today (our software developer's project system) [check: where it holds data, and for how long]
+    - Your Business Today (our software developer's project system), which holds its data in Supabase until it is deleted
 - HMRC, building control, the Health and Safety Executive, the Building Safety Regulator for higher-risk buildings, and other authorities where the law requires it.
 
 We do not sell your information.
@@ -83,7 +83,7 @@ Please contact us first at info@jewelbb.co.uk. We acknowledge data protection co
 
 ## Cookies
 
-Our website uses only cookies needed for it to work [check: cookie list; if analytics or other non-essential cookies are set, list them here and add a consent banner]. We do not use advertising or tracking cookies [check].
+Our website uses only cookies needed for it to work. We do not use advertising or tracking cookies.
 
 ## Changes
 
