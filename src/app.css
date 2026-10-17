@@ -220,6 +220,25 @@ img {
 	font-style: italic;
 }
 
+.prose table {
+	width: 100%;
+	margin: 1.5em 0;
+	border-collapse: collapse;
+}
+
+.prose th,
+.prose td {
+	padding: 0.55em 0.8em;
+	border-bottom: 1px solid var(--line);
+	text-align: left;
+	vertical-align: top;
+}
+
+.prose th {
+	color: var(--ink-900);
+	font-weight: 600;
+}
+
 /* Utility ----------------------------------------------------------------- */
 .visually-hidden {
 	position: absolute;

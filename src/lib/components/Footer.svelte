@@ -7,8 +7,7 @@
 	const socials = [
 		{ label: 'Instagram', href: site.social.instagram },
 		{ label: 'Facebook', href: site.social.facebook },
-		{ label: 'LinkedIn', href: site.social.linkedin },
-		{ label: 'Houzz', href: site.social.houzz }
+		{ label: 'LinkedIn', href: site.social.linkedin }
 	];
 </script>
 
@@ -61,7 +60,7 @@
 		<div class="container footer__legal-inner">
 			<p>© {year} Jewel Bespoke Build Ltd. All rights reserved.</p>
 			<ul>
-				<li><a href="/privacy-policy">Privacy policy</a></li>
+				<li><a href="/privacy-policy">Privacy notice</a></li>
 				<li><a href="/subcontractor-terms">Subcontractor terms</a></li>
 			</ul>
 		</div>

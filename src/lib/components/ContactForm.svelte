@@ -98,6 +98,11 @@
 		<button class="btn btn--primary form__submit" type="submit" disabled={status === 'sending'}>
 			{status === 'sending' ? 'Sending…' : 'Send message'}
 		</button>
+
+		<p class="form__privacy">
+			We use your details to reply to your enquiry. Read our
+			<a href="/privacy-policy">privacy notice</a> to see how we handle your information.
+		</p>
 	</form>
 {/if}
 
@@ -124,6 +129,12 @@
 		font-size: 0.92rem;
 		font-weight: 600;
 		color: var(--ink-900);
+	}
+
+	.form__privacy {
+		margin: 0;
+		font-size: 0.85rem;
+		color: var(--ink-600);
 	}
 
 	.form__optional {
