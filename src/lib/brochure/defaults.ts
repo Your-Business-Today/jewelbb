@@ -268,11 +268,6 @@ export function defaultBrochurePages(): DefaultPage[] {
 				quotes: [
 					{
 						quote:
-							'We have worked with Jewel Bespoke Build for several years on residential projects and have always found them responsive and timely. Their project management ensures organised workforce coordination, controlled costs, and effective communication.',
-						author: 'Malcolm V Leliott'
-					},
-					{
-						quote:
 							'Les and Nigel Reilly are the father and son driving force behind their Jewel construction companies. Their commitment to excellence and unwavering dedication to delivering top-notch results have earned them an impeccable reputation.',
 						author: 'Lady Jacqueline Smith Maxwell'
 					},

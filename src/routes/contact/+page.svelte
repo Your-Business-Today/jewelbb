@@ -72,7 +72,7 @@
 					</li>
 				</ul>
 			</div>
-			<TestimonialCard testimonial={testimonials[1]} />
+			<TestimonialCard testimonial={testimonials[0]} />
 		</aside>
 	</div>
 </section>
