@@ -11,3 +11,4 @@ The public site for Jewel Bespoke Build (jewelbb.co.uk): SvelteKit (Svelte 5), d
 - YBT project: Jewel Bespoke Build Website.
 - `npm run check` type-checks the Svelte and TypeScript; run it, and `npm run build`, before each commit.
 - Site content lives in `src/lib/data/`; blog posts are markdown files in `src/lib/posts/`.
+- Migrations run themselves on merge: a new one goes in the top-level `migrations/` folder, and the `run migrations` workflow runs it against `SUPABASE_DB_URL`. The dated files in `supabase/` were run by hand before the workflow existed and must not move into `migrations/`. `supabase/schema.sql` is for a fresh database only.
