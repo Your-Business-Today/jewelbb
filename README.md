@@ -56,6 +56,7 @@ The site has a lightweight CMS at **`/admin`** (not linked from the public site 
 - **Slideshow** — the rotating photos at the top of the homepage. Add photos from any project gallery or upload new ones, reorder, hide, or give each one a description. With no photos showing, the homepage falls back to its standard hero photo.
 - **Page text** — edit the headings, intros and SEO titles/descriptions of the homepage, About, Services (including each service's title and description), Portfolio, Our community, Contact, News and the call-to-action band. Only changed fields are stored; anything untouched keeps the built-in copy from `src/lib/content/pages.ts`, and each field or whole page can be restored to the original.
 - **Badges** — the accreditation/partnership logo strip on the homepage (Considerate Constructors, SafeContractor, etc.). Add, hide, reorder, replace or delete badges; hiding keeps the badge on file so it can be brought back later. Requires the `badges` table — on an existing database run the additive migration `supabase/2026-08-31-badges.sql` once (fresh setups get it from `schema.sql`).
+- **Testimonials** — the client quotes on the homepage, the contact page and the brochure's testimonials page. Add, edit, reorder (sort order), **Hide**/**Show** or delete a testimonial, and tick where each one appears. The brochure's testimonials page takes its quotes from here; its heading is still edited in the brochure builder. Requires the `testimonials` table from `supabase/2026-10-20-testimonials.sql` (until it exists the site shows the built-in testimonials from `src/lib/data/testimonials.ts`).
 - **Brochures** — a full brochure builder. Compose print-quality brochures page by page from designed templates (cover, philosophy, team, services, three-page project spreads, process, testimonials, back cover), keep them in draft, and make one **active** — that's what visitors see at `/brochure` and download as a PDF. PDFs are rendered server-side with headless Chromium, so the output is identical to the designed A4 pages every time (no browser print dialogs involved). Photos upload straight to Supabase Storage at full resolution via signed URLs. Requires running `supabase/2026-08-19-brochures.sql` once (see below).
 
 Content lives in Supabase; uploaded images go to a public `media` storage bucket.
@@ -82,6 +83,7 @@ The service_role key bypasses row-level security — it must only ever live in e
 | `2026-09-04-security-hardening.sql` | RLS on every table, public API roles revoked, `admin_login_attempts` table (see Security) |
 | `2026-09-25-page-content.sql` | `page_content` table (Page text editor) + `projects.visible` (hide projects) |
 | `2026-09-25-home-slides.sql` | `home_slides` table (homepage slideshow) + seed |
+| `2026-10-20-testimonials.sql` | `testimonials` table (Admin → Testimonials) + seed from the live homepage and active brochure, leaving out the withdrawn MVL endorsement |
 
 ## Security
 

@@ -8,11 +8,13 @@ import {
 	deletePage
 } from '$lib/server/brochures';
 import { templateMap } from '$lib/brochure/templates';
+import { withBrochureTestimonials } from '$lib/server/testimonials';
 import type { Actions, PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async ({ params }) => {
-	const doc = await getBrochure(params.id);
-	if (!doc) error(404, 'Brochure not found');
+	const stored = await getBrochure(params.id);
+	if (!stored) error(404, 'Brochure not found');
+	const doc = await withBrochureTestimonials(stored);
 	const page = doc.pages.find((p) => p.id === params.pageId);
 	if (!page) error(404, 'Page not found');
 	const template = templateMap[page.template];

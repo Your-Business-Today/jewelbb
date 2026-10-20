@@ -1,4 +1,5 @@
 import { fallbackBrochure, getActiveBrochure } from '$lib/server/brochures';
+import { withBrochureTestimonials } from '$lib/server/testimonials';
 import type { PageServerLoad } from './$types';
 
 export const prerender = false;
@@ -10,5 +11,5 @@ export const prerender = false;
  */
 export const load: PageServerLoad = async () => {
 	const active = await getActiveBrochure();
-	return { doc: active ?? fallbackBrochure() };
+	return { doc: await withBrochureTestimonials(active ?? fallbackBrochure()) };
 };

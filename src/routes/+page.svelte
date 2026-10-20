@@ -6,7 +6,6 @@
 	import HeroSlideshow from '$lib/components/HeroSlideshow.svelte';
 	import { site } from '$lib/data/site';
 	import { images } from '$lib/data/images';
-	import { testimonials } from '$lib/data/testimonials';
 	import { pageText, servicesWithText } from '$lib/content/pages';
 
 	let { data } = $props();
@@ -99,16 +98,22 @@
 </section>
 
 <!-- Testimonial ------------------------------------------------------------ -->
-<section class="section">
-	<div class="container testimonial-wrap">
-		<div>
-			<span class="kicker">{t.testimonial_kicker}</span>
-			<h2>{t.testimonial_title}</h2>
-			<p class="lede">{t.testimonial_text}</p>
+{#if data.testimonials.length > 0}
+	<section class="section">
+		<div class="container testimonial-wrap">
+			<div>
+				<span class="kicker">{t.testimonial_kicker}</span>
+				<h2>{t.testimonial_title}</h2>
+				<p class="lede">{t.testimonial_text}</p>
+			</div>
+			<div class="testimonial-list">
+				{#each data.testimonials as testimonial, i (i)}
+					<TestimonialCard {testimonial} />
+				{/each}
+			</div>
 		</div>
-		<TestimonialCard testimonial={testimonials[0]} />
-	</div>
-</section>
+	</section>
+{/if}
 
 <!-- Badges ----------------------------------------------------------------- -->
 {#if data.badges.length > 0}
@@ -223,6 +228,11 @@
 		display: grid;
 		gap: 2.5rem;
 		align-items: center;
+	}
+
+	.testimonial-list {
+		display: grid;
+		gap: 1.5rem;
 	}
 
 	@media (min-width: 900px) {
