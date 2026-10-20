@@ -73,7 +73,9 @@ The service_role key bypasses row-level security — it must only ever live in e
 
 ### Database migrations
 
-`schema.sql` is for a **fresh** database. On the live database, apply changes with the dated, standalone files in `supabase/` instead — each is additive, idempotent and safe to re-run:
+`schema.sql` is for a **fresh** database. The live database changes through migrations, which run themselves: when a pull request merges into `main`, the `run migrations` workflow (`.github/workflows/run-migrations.yml`, `scripts/run-added-migrations.sh`) runs every `migrations/*.sql` file the merge added, in filename order, each in one transaction, against the repository secret `SUPABASE_DB_URL`. A file already on `main` never runs again, so a correction is a new file, and every migration is additive and safe to run twice.
+
+New migrations go in the top-level `migrations/` folder, named `YYYY-MM-DD-<what-it-adds>.sql`. The dated files below, in `supabase/`, came before the workflow and were all run by hand on the live database; they stay where they are so the workflow never sees them:
 
 | File | Adds |
 | --- | --- |
