@@ -11,13 +11,14 @@ import { error } from '@sveltejs/kit';
 import { ADMIN_COOKIE, verifyPrintToken, verifySessionToken } from '$lib/server/auth';
 import { dbConfigured } from '$lib/server/db';
 import { fallbackBrochure, getBrochure } from '$lib/server/brochures';
+import { withBrochureTestimonials } from '$lib/server/testimonials';
 import type { PageServerLoad } from './$types';
 
 export const prerender = false;
 
 export const load: PageServerLoad = async ({ params, url, cookies }) => {
 	if (params.id === 'default' || !dbConfigured()) {
-		return { doc: fallbackBrochure() };
+		return { doc: await withBrochureTestimonials(fallbackBrochure()) };
 	}
 
 	const doc = await getBrochure(params.id);
@@ -29,5 +30,5 @@ export const load: PageServerLoad = async ({ params, url, cookies }) => {
 		if (!tokenOk && !sessionOk) error(403, 'This brochure is not published');
 	}
 
-	return { doc };
+	return { doc: await withBrochureTestimonials(doc) };
 };

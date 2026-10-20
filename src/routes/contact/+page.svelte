@@ -3,7 +3,6 @@
 	import ContactForm from '$lib/components/ContactForm.svelte';
 	import TestimonialCard from '$lib/components/TestimonialCard.svelte';
 	import { site } from '$lib/data/site';
-	import { testimonials } from '$lib/data/testimonials';
 	import { pageText, paragraphs } from '$lib/content/pages';
 
 	let { data } = $props();
@@ -72,7 +71,9 @@
 					</li>
 				</ul>
 			</div>
-			<TestimonialCard testimonial={testimonials[0]} />
+			{#if data.testimonial}
+				<TestimonialCard testimonial={data.testimonial} />
+			{/if}
 		</aside>
 	</div>
 </section>

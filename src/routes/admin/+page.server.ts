@@ -7,6 +7,7 @@ export const load: PageServerLoad = async () => {
 	let sectionCount: number | null = null;
 	let projectCount: number | null = null;
 	let badgeCount: number | null = null;
+	let testimonialCount: number | null = null;
 	let rtwCount: number | null = null;
 	let slideCount: number | null = null;
 	let enquiryCount: number | null = null;
@@ -40,6 +41,11 @@ export const load: PageServerLoad = async () => {
 			badgeCount = null;
 		}
 		try {
+			testimonialCount = await dbCount('testimonials');
+		} catch {
+			testimonialCount = null;
+		}
+		try {
 			slideCount = await dbCount('home_slides', 'visible=eq.true');
 		} catch {
 			slideCount = null;
@@ -70,6 +76,7 @@ export const load: PageServerLoad = async () => {
 		projectCount,
 		contentPageCount: contentPages.length,
 		badgeCount,
+		testimonialCount,
 		rtwCount,
 		slideCount,
 		enquiryCount,

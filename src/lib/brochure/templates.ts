@@ -233,17 +233,12 @@ export const templates: Template[] = [
 		description: 'Two-column client quotes.',
 		fields: [
 			{ key: 'kicker', label: 'Kicker', type: 'text', placeholder: 'CLIENT TESTIMONIALS' },
-			{ key: 'title', label: 'Heading', type: 'text', placeholder: 'In Their Words' },
 			{
-				key: 'quotes',
-				label: 'Quotes',
-				type: 'group-list',
-				itemLabel: 'quote',
-				max: 10,
-				fields: [
-					{ key: 'quote', label: 'Quote', type: 'textarea' },
-					{ key: 'author', label: 'Attribution', type: 'text', placeholder: 'Mrs. Carson' }
-				]
+				key: 'title',
+				label: 'Heading',
+				type: 'text',
+				placeholder: 'In Their Words',
+				hint: 'The quotes come from Admin → Testimonials: every shown testimonial ticked for the brochure.'
 			}
 		],
 		blank: { kicker: 'CLIENT TESTIMONIALS', title: 'In Their Words', quotes: [] }

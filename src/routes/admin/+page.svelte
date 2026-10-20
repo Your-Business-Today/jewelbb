@@ -58,6 +58,14 @@
 			icon: 'M12 2l2.5 5.1 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8L12 2z'
 		},
 		{
+			href: '/admin/testimonials',
+			title: 'Testimonials',
+			count: data.testimonialCount,
+			unit: 'client quotes',
+			blurb: 'Quotes on the homepage, contact page and brochure',
+			icon: 'M6 6h5v5H8a2 2 0 0 0 2 2v2a4 4 0 0 1-4-4V6zm8 0h5v5h-3a2 2 0 0 0 2 2v2a4 4 0 0 1-4-4V6z'
+		},
+		{
 			href: '/admin/brochure',
 			title: 'Brochures',
 			count: data.sectionCount,

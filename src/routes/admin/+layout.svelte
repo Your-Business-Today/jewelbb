@@ -12,6 +12,7 @@
 		{ label: 'Slideshow', href: '/admin/slideshow' },
 		{ label: 'Staff', href: '/admin/staff' },
 		{ label: 'Badges', href: '/admin/badges' },
+		{ label: 'Testimonials', href: '/admin/testimonials' },
 		{ label: 'Brochures', href: '/admin/brochure' },
 		{ label: 'RTW checks', href: '/admin/rtw' }
 	];

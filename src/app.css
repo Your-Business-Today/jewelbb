@@ -19,6 +19,16 @@
 	--tint: #f7f6f4;
 	--line: #e9e7e4;
 
+	/* Admin status messages */
+	--success-tint: #eef7ee;
+	--success-line: #cfe6cf;
+	--danger-ink: #a33a2a;
+	--danger-tint: #fdf1ee;
+	--danger-line: #f0cfc7;
+	--danger-edge: #e5b8ae;
+	--notice-tint: #fdf6ec;
+	--notice-line: #f0dfc0;
+
 	/* Typography */
 	--font-display: 'Poppins', 'Century Gothic', 'Futura', -apple-system, sans-serif;
 	--font-body: 'Questrial', 'Century Gothic', -apple-system, BlinkMacSystemFont, sans-serif;

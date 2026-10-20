@@ -12,6 +12,7 @@ import {
 } from '$lib/server/brochures';
 import { getProjects } from '$lib/server/projects';
 import { dbUpdate } from '$lib/server/db';
+import { withBrochureTestimonials } from '$lib/server/testimonials';
 import type { TemplateId } from '$lib/brochure/templates';
 import type { Actions, PageServerLoad } from './$types';
 
@@ -19,7 +20,8 @@ export const load: PageServerLoad = async ({ params }) => {
 	const doc = await getBrochure(params.id);
 	if (!doc) error(404, 'Brochure not found');
 	const projects = await getProjects({ includeHidden: true });
-	return { doc, projects: projects.map((p) => ({ slug: p.slug, name: p.name })) };
+	const projectLinks = projects.map((p) => ({ slug: p.slug, name: p.name }));
+	return { doc: await withBrochureTestimonials(doc), projects: projectLinks };
 };
 
 export const actions: Actions = {
