@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-06T08:49:28+00:00",
-  "kitVersion": "1.14.0",
+  "generatedAt": "2026-10-22T10:34:33+00:00",
+  "kitVersion": "1.31.0",
   "score": {
-    "overall": 63.8,
+    "overall": 68.6,
     "groups": [
       {
         "group": "Standard baseline checks",
-        "score": 49.7,
-        "weight": 52
+        "score": 58.4,
+        "weight": 60
       },
       {
         "group": "Design pattern file count",
@@ -16,7 +16,7 @@
       },
       {
         "group": "Prose",
-        "score": 82.2,
+        "score": 83.7,
         "weight": 20
       },
       {
@@ -39,9 +39,9 @@
         "zeroAt": 0.5,
         "unit": "files",
         "isMeasured": true,
-        "offenders": 43,
-        "measuredAgainst": 117,
-        "score": 26.5
+        "offenders": 42,
+        "measuredAgainst": 126,
+        "score": 33.3
       },
       {
         "key": "worstFile",
@@ -64,8 +64,8 @@
         "unit": "functions",
         "isMeasured": true,
         "offenders": 11,
-        "measuredAgainst": 171,
-        "score": 74.3
+        "measuredAgainst": 192,
+        "score": 77.1
       },
       {
         "key": "elseBlocks",
@@ -76,8 +76,8 @@
         "unit": "branches",
         "isMeasured": true,
         "offenders": 10,
-        "measuredAgainst": 359,
-        "score": 94.4
+        "measuredAgainst": 382,
+        "score": 94.8
       },
       {
         "key": "duplication",
@@ -86,9 +86,10 @@
         "weight": 8,
         "zeroAt": 20,
         "unit": "",
-        "isMeasured": false,
-        "offenders": null,
-        "score": null
+        "isMeasured": true,
+        "offenders": 1.24,
+        "measuredAgainst": 1,
+        "score": 93.8
       },
       {
         "key": "comments",
@@ -99,8 +100,8 @@
         "unit": "thousand lines",
         "isMeasured": true,
         "offenders": 148,
-        "measuredAgainst": 15.49,
-        "score": 80.9
+        "measuredAgainst": 15.9,
+        "score": 81.4
       },
       {
         "key": "magicValues",
@@ -110,9 +111,9 @@
         "zeroAt": 20,
         "unit": "thousand lines",
         "isMeasured": true,
-        "offenders": 277,
-        "measuredAgainst": 15.49,
-        "score": 10.6
+        "offenders": 247,
+        "measuredAgainst": 15.9,
+        "score": 22.4
       },
       {
         "key": "orphans",
@@ -123,8 +124,8 @@
         "unit": "components and functions",
         "isMeasured": true,
         "offenders": 11,
-        "measuredAgainst": 195,
-        "score": 43.6
+        "measuredAgainst": 217,
+        "score": 49.3
       },
       {
         "key": "memberChains",
@@ -134,9 +135,9 @@
         "zeroAt": 30,
         "unit": "thousand lines",
         "isMeasured": true,
-        "offenders": 101,
-        "measuredAgainst": 15.49,
-        "score": 78.3
+        "offenders": 100,
+        "measuredAgainst": 15.9,
+        "score": 79.0
       },
       {
         "key": "deepIndentation",
@@ -146,8 +147,8 @@
         "zeroAt": 30,
         "unit": "thousand lines",
         "isMeasured": true,
-        "offenders": 727,
-        "measuredAgainst": 15.49,
+        "offenders": 724,
+        "measuredAgainst": 15.9,
         "score": 0.0
       },
       {
@@ -159,7 +160,7 @@
         "unit": "functions",
         "isMeasured": true,
         "offenders": 0,
-        "measuredAgainst": 171,
+        "measuredAgainst": 192,
         "score": 100.0
       },
       {
@@ -171,7 +172,7 @@
         "unit": "predicted files",
         "isMeasured": true,
         "offenders": 0,
-        "measuredAgainst": 26,
+        "measuredAgainst": 28,
         "score": 100.0
       },
       {
@@ -193,9 +194,9 @@
         "zeroAt": 0.25,
         "unit": "branches",
         "isMeasured": true,
-        "offenders": 10,
-        "measuredAgainst": 359,
-        "score": 88.9
+        "offenders": 9,
+        "measuredAgainst": 382,
+        "score": 90.6
       },
       {
         "key": "literalComparisons",
@@ -206,8 +207,8 @@
         "unit": "branches",
         "isMeasured": true,
         "offenders": 40,
-        "measuredAgainst": 359,
-        "score": 55.4
+        "measuredAgainst": 382,
+        "score": 58.1
       },
       {
         "key": "gluedAccessors",
@@ -218,7 +219,7 @@
         "unit": "functions",
         "isMeasured": true,
         "offenders": 0,
-        "measuredAgainst": 171,
+        "measuredAgainst": 192,
         "score": 100.0
       },
       {
@@ -248,18 +249,18 @@
   "summaries": {
     "fileLength": {
       "limit": 100,
-      "filesOverLimit": 43,
-      "totalFiles": 117,
-      "totalLines": 15487,
+      "filesOverLimit": 42,
+      "totalFiles": 126,
+      "totalLines": 15905,
       "worstFileLines": 1048,
       "worstFileTimesOverLimit": 9.48
     },
     "functionShape": {
       "limit": 30,
       "functionsOverLimit": 11,
-      "totalFunctions": 171,
+      "totalFunctions": 192,
       "elseBlocks": 10,
-      "ifBlocks": 359,
+      "ifBlocks": 382,
       "measurementIsHeuristic": true
     },
     "functionNames": {
@@ -272,10 +273,13 @@
       "measurementIsHeuristic": true
     },
     "duplication": {
-      "skipped": "jscpd is not installed (npm install -g jscpd)"
+      "clones": 21,
+      "duplicatedLines": 314,
+      "totalLines": 25404,
+      "duplicatedPercentage": 1.24
     },
     "naming": {
-      "bannedAbbreviationHits": 156,
+      "bannedAbbreviationHits": 160,
       "unprefixedBooleans": 37
     },
     "comments": {
@@ -286,36 +290,36 @@
     "magicValues": {
       "inlineHexColours": 244,
       "inlineStyleAttributes": 3,
-      "repeatedStringLiterals": 30
+      "repeatedStringLiterals": 0
     },
     "prose": {
-      "longMemberChainLines": 101,
-      "deeplyIndentedLines": 727,
-      "overlongLines": 101,
+      "longMemberChainLines": 100,
+      "deeplyIndentedLines": 724,
+      "overlongLines": 99,
       "measurementIsHeuristic": true
     },
     "conditions": {
-      "tangledConditionLines": 10,
+      "tangledConditionLines": 9,
       "literalComparisonLines": 40,
       "measurementIsHeuristic": true
     },
     "orphans": {
       "orphanFunctions": 0,
-      "functionsExamined": 171
+      "functionsExamined": 192
     },
     "designPatterns": {
       "roleFamilies": 4,
-      "predictedFiles": 26,
+      "predictedFiles": 28,
       "predictedFilesMissing": 0,
       "entities": 0,
       "entitiesOutOfRange": 0,
       "measurementIsHeuristic": true
     },
     "inventory": {
-      "pages": 30,
-      "components": 24,
+      "pages": 31,
+      "components": 25,
       "orphanComponents": 11,
-      "averagePageLines": 284
+      "averagePageLines": 275
     },
     "siteDefinition": {
       "skipped": "no siteDefinition catalogue in rules.json"
@@ -328,14 +332,16 @@
       "looserLimits": 0
     },
     "fileAreas": {
-      "totalFiles": 260,
-      "frontend": 172,
-      "backend": 34,
-      "shared": 19,
-      "docs": 10,
+      "totalFiles": 503,
+      "tooling": 192,
+      "frontend": 174,
+      "backend": 38,
+      "docs": 26,
+      "tests": 22,
+      "shared": 22,
+      "infrastructure": 11,
+      "database": 8,
       "api": 8,
-      "infrastructure": 8,
-      "database": 7,
       "other": 2
     }
   },
@@ -344,9 +350,9 @@
       "name": "fileLength",
       "summary": {
         "limit": 100,
-        "filesOverLimit": 43,
-        "totalFiles": 117,
-        "totalLines": 15487,
+        "filesOverLimit": 42,
+        "totalFiles": 126,
+        "totalLines": 15905,
         "worstFileLines": 1048,
         "worstFileTimesOverLimit": 9.48
       },
@@ -373,7 +379,7 @@
         },
         {
           "file": "src/routes/admin/+page.svelte",
-          "lines": 439
+          "lines": 447
         },
         {
           "file": "src/routes/admin/projects/[id]/+page.svelte",
@@ -389,7 +395,7 @@
         },
         {
           "file": "src/lib/brochure/defaults.ts",
-          "lines": 326
+          "lines": 321
         },
         {
           "file": "src/routes/admin/brochure/+page.svelte",
@@ -397,7 +403,7 @@
         },
         {
           "file": "src/lib/brochure/templates.ts",
-          "lines": 308
+          "lines": 303
         },
         {
           "file": "src/lib/server/db.ts",
@@ -428,12 +434,12 @@
           "lines": 249
         },
         {
-          "file": "src/lib/components/admin/ImagePicker.svelte",
-          "lines": 243
+          "file": "src/routes/+page.svelte",
+          "lines": 247
         },
         {
-          "file": "src/routes/+page.svelte",
-          "lines": 237
+          "file": "src/lib/components/admin/ImagePicker.svelte",
+          "lines": 243
         },
         {
           "file": "src/routes/admin/projects/+page.svelte",
@@ -441,7 +447,11 @@
         },
         {
           "file": "src/routes/admin/+layout.svelte",
-          "lines": 214
+          "lines": 215
+        },
+        {
+          "file": "src/lib/components/ContactForm.svelte",
+          "lines": 196
         },
         {
           "file": "src/routes/about/+page.svelte",
@@ -450,10 +460,6 @@
         {
           "file": "src/routes/admin/staff/[id]/+page.svelte",
           "lines": 195
-        },
-        {
-          "file": "src/lib/components/ContactForm.svelte",
-          "lines": 185
         },
         {
           "file": "src/lib/components/HeroSlideshow.svelte",
@@ -465,7 +471,7 @@
         },
         {
           "file": "src/lib/components/Footer.svelte",
-          "lines": 166
+          "lines": 165
         },
         {
           "file": "src/lib/components/brochure/PageProjectDetail.svelte",
@@ -488,15 +494,15 @@
           "lines": 139
         },
         {
+          "file": "src/routes/contact/+page.svelte",
+          "lines": 135
+        },
+        {
           "file": "src/lib/server/auth.ts",
           "lines": 134
         },
         {
           "file": "src/routes/admin/login/+page.svelte",
-          "lines": 134
-        },
-        {
-          "file": "src/routes/contact/+page.svelte",
           "lines": 134
         },
         {
@@ -516,10 +522,6 @@
           "lines": 111
         },
         {
-          "file": "src/routes/privacy-policy/+page.svelte",
-          "lines": 105
-        },
-        {
           "file": "src/routes/admin/staff/+page.svelte",
           "lines": 102
         }
@@ -530,21 +532,21 @@
       "summary": {
         "limit": 30,
         "functionsOverLimit": 11,
-        "totalFunctions": 171,
+        "totalFunctions": 192,
         "elseBlocks": 10,
-        "ifBlocks": 359,
+        "ifBlocks": 382,
         "measurementIsHeuristic": true
       },
       "offenders": [
         {
           "file": "src/lib/brochure/defaults.ts",
-          "lines": 305,
+          "lines": 300,
           "name": "defaultBrochurePages",
           "line": 22
         },
         {
           "file": "src/routes/admin/+page.server.ts",
-          "lines": 76,
+          "lines": 83,
           "name": "load",
           "line": 5
         },
@@ -624,7 +626,7 @@
     "naming": {
       "name": "naming",
       "summary": {
-        "bannedAbbreviationHits": 156,
+        "bannedAbbreviationHits": 160,
         "unprefixedBooleans": 37
       },
       "offenders": {
@@ -863,7 +865,7 @@
           },
           {
             "file": "src/routes/+page.server.ts",
-            "line": 7,
+            "line": 9,
             "name": "prerender"
           },
           {
@@ -923,7 +925,7 @@
           },
           {
             "file": "src/routes/brochure/+page.server.ts",
-            "line": 4,
+            "line": 5,
             "name": "prerender"
           },
           {
@@ -933,7 +935,7 @@
           },
           {
             "file": "src/routes/brochure/print/[id]/+page.server.ts",
-            "line": 16,
+            "line": 17,
             "name": "prerender"
           },
           {
@@ -1033,21 +1035,21 @@
       "summary": {
         "inlineHexColours": 244,
         "inlineStyleAttributes": 3,
-        "repeatedStringLiterals": 30
+        "repeatedStringLiterals": 0
       },
       "offenders": {
         "hexColours": [
           {
             "file": "src/lib/components/ContactForm.svelte",
-            "line": 165
+            "line": 176
           },
           {
             "file": "src/lib/components/ContactForm.svelte",
-            "line": 166
+            "line": 177
           },
           {
             "file": "src/lib/components/ContactForm.svelte",
-            "line": 167
+            "line": 178
           },
           {
             "file": "src/lib/components/admin/ImagePicker.svelte",
@@ -1083,31 +1085,31 @@
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 67
+            "line": 68
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 76
+            "line": 77
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 133
+            "line": 134
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 171
+            "line": 172
           },
           {
             "file": "src/routes/admin/+page.svelte",
-            "line": 198
+            "line": 206
           },
           {
             "file": "src/routes/admin/+page.svelte",
-            "line": 199
+            "line": 207
           },
           {
             "file": "src/routes/admin/+page.svelte",
-            "line": 212
+            "line": 220
           },
           {
             "file": "src/routes/admin/badges/+page.svelte",
@@ -1252,136 +1254,15 @@
             "line": 553
           }
         ],
-        "repeatedLiterals": [
-          {
-            "literal": "hidden",
-            "occurrences": 42
-          },
-          {
-            "literal": "submit",
-            "occurrences": 35
-          },
-          {
-            "literal": "container",
-            "occurrences": 19
-          },
-          {
-            "literal": "btn btn--primary",
-            "occurrences": 17
-          },
-          {
-            "literal": "kicker",
-            "occurrences": 16
-          },
-          {
-            "literal": "noopener",
-            "occurrences": 13
-          },
-          {
-            "literal": "button",
-            "occurrences": 13
-          },
-          {
-            "literal": "btn btn--outline btn--sm",
-            "occurrences": 12
-          },
-          {
-            "literal": "btn btn--outline",
-            "occurrences": 11
-          },
-          {
-            "literal": "status",
-            "occurrences": 9
-          },
-          {
-            "literal": "b-kicker",
-            "occurrences": 8
-          },
-          {
-            "literal": "section",
-            "occurrences": 8
-          },
-          {
-            "literal": "section section--tint",
-            "occurrences": 8
-          },
-          {
-            "literal": "section page-hero",
-            "occurrences": 7
-          },
-          {
-            "literal": "crumbs",
-            "occurrences": 7
-          },
-          {
-            "literal": "b-rule",
-            "occurrences": 6
-          },
-          {
-            "literal": "card row",
-            "occurrences": 6
-          },
-          {
-            "literal": "checkbox",
-            "occurrences": 6
-          },
-          {
-            "literal": "danger",
-            "occurrences": 6
-          },
-          {
-            "literal": "rail-step",
-            "occurrences": 6
-          },
-          {
-            "literal": "stepnum",
-            "occurrences": 6
-          },
-          {
-            "literal": "radio-opt",
-            "occurrences": 6
-          },
-          {
-            "literal": "b-title",
-            "occurrences": 5
-          },
-          {
-            "literal": "robots",
-            "occurrences": 4
-          },
-          {
-            "literal": "multipart/form-data",
-            "occurrences": 4
-          },
-          {
-            "literal": "visible",
-            "occurrences": 4
-          },
-          {
-            "literal": "row__text",
-            "occurrences": 4
-          },
-          {
-            "literal": "page_id",
-            "occurrences": 4
-          },
-          {
-            "literal": "action",
-            "occurrences": 4
-          },
-          {
-            "literal": "nowrap",
-            "occurrences": 4
-          }
-        ]
+        "repeatedLiterals": []
       }
     },
     "prose": {
       "name": "prose",
       "summary": {
-        "longMemberChainLines": 101,
-        "deeplyIndentedLines": 727,
-        "overlongLines": 101,
+        "longMemberChainLines": 100,
+        "deeplyIndentedLines": 724,
+        "overlongLines": 99,
         "measurementIsHeuristic": true
       },
       "offenders": {
@@ -1389,10 +1270,6 @@
           {
             "file": "src/hooks.server.ts",
             "line": 40
-          },
-          {
-            "file": "src/lib/brochure/defaults.ts",
-            "line": 20
           },
           {
             "file": "src/lib/brochure/defaults.ts",
@@ -1416,15 +1293,7 @@
           },
           {
             "file": "src/lib/brochure/defaults.ts",
-            "line": 317
-          },
-          {
-            "file": "src/lib/brochure/defaults.ts",
-            "line": 318
-          },
-          {
-            "file": "src/lib/brochure/templates.ts",
-            "line": 75
+            "line": 313
           },
           {
             "file": "src/lib/data/images.ts",
@@ -1445,10 +1314,6 @@
           {
             "file": "src/lib/data/images.ts",
             "line": 30
-          },
-          {
-            "file": "src/lib/data/site.ts",
-            "line": 9
           },
           {
             "file": "src/lib/server/brochures.ts",
@@ -1472,11 +1337,15 @@
           },
           {
             "file": "src/routes/+page.server.ts",
-            "line": 11
+            "line": 19
           },
           {
             "file": "src/routes/admin/brochure/[id]/page/[pageId]/+page.server.ts",
-            "line": 28
+            "line": 30
+          },
+          {
+            "file": "src/routes/admin/brochure/[id]/pdf/+server.ts",
+            "line": 26
           },
           {
             "file": "src/routes/admin/content/+page.server.ts",
@@ -1492,7 +1361,7 @@
           },
           {
             "file": "src/routes/brochure/print/[id]/+page.server.ts",
-            "line": 26
+            "line": 27
           },
           {
             "file": "src/lib/components/CtaBand.svelte",
@@ -1512,15 +1381,11 @@
           },
           {
             "file": "src/lib/components/Footer.svelte",
-            "line": 11
+            "line": 40
           },
           {
             "file": "src/lib/components/Footer.svelte",
             "line": 41
-          },
-          {
-            "file": "src/lib/components/Footer.svelte",
-            "line": 42
           },
           {
             "file": "src/lib/components/Header.svelte",
@@ -1539,8 +1404,16 @@
             "line": 116
           },
           {
+            "file": "src/lib/components/admin/testimonials/TestimonialFields.svelte",
+            "line": 16
+          },
+          {
             "file": "src/routes/+layout.svelte",
-            "line": 12
+            "line": 11
+          },
+          {
+            "file": "src/routes/+page.svelte",
+            "line": 26
           },
           {
             "file": "src/routes/+page.svelte",
@@ -1556,11 +1429,11 @@
           },
           {
             "file": "src/routes/+page.svelte",
-            "line": 30
+            "line": 101
           },
           {
             "file": "src/routes/+page.svelte",
-            "line": 114
+            "line": 119
           },
           {
             "file": "src/routes/[area]/+page.svelte",
@@ -1572,11 +1445,11 @@
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 20
+            "line": 21
           },
           {
             "file": "src/routes/admin/+page.svelte",
-            "line": 136
+            "line": 144
           },
           {
             "file": "src/routes/admin/badges/+page.svelte",
@@ -1585,6 +1458,14 @@
           {
             "file": "src/routes/admin/badges/+page.svelte",
             "line": 37
+          },
+          {
+            "file": "src/routes/admin/brochure/+page.svelte",
+            "line": 78
+          },
+          {
+            "file": "src/routes/admin/brochure/[id]/+page.svelte",
+            "line": 8
           }
         ],
         "deepIndentation": [
@@ -1746,7 +1627,7 @@
           },
           {
             "file": "src/lib/brochure/defaults.ts",
-            "line": 297
+            "line": 299
           },
           {
             "file": "src/lib/brochure/defaults.ts",
@@ -1755,18 +1636,6 @@
           {
             "file": "src/lib/brochure/defaults.ts",
             "line": 301
-          },
-          {
-            "file": "src/lib/brochure/defaults.ts",
-            "line": 304
-          },
-          {
-            "file": "src/lib/brochure/defaults.ts",
-            "line": 305
-          },
-          {
-            "file": "src/lib/brochure/defaults.ts",
-            "line": 306
           },
           {
             "file": "src/lib/components/Header.svelte",
@@ -1787,6 +1656,18 @@
           {
             "file": "src/lib/components/Header.svelte",
             "line": 28
+          },
+          {
+            "file": "src/lib/components/admin/ImagePicker.svelte",
+            "line": 77
+          },
+          {
+            "file": "src/lib/components/admin/ImagePicker.svelte",
+            "line": 78
+          },
+          {
+            "file": "src/lib/components/admin/ImagePicker.svelte",
+            "line": 79
           }
         ],
         "overlongLines": [
@@ -1900,11 +1781,7 @@
           },
           {
             "file": "src/lib/brochure/defaults.ts",
-            "line": 296
-          },
-          {
-            "file": "src/lib/brochure/defaults.ts",
-            "line": 305
+            "line": 300
           },
           {
             "file": "src/lib/content/pages.ts",
@@ -1989,6 +1866,10 @@
           {
             "file": "src/lib/data/projects.ts",
             "line": 76
+          },
+          {
+            "file": "src/lib/data/projects.ts",
+            "line": 79
           }
         ]
       }
@@ -1996,16 +1877,12 @@
     "conditions": {
       "name": "conditions",
       "summary": {
-        "tangledConditionLines": 10,
+        "tangledConditionLines": 9,
         "literalComparisonLines": 40,
         "measurementIsHeuristic": true
       },
       "offenders": {
         "tangled": [
-          {
-            "file": "src/lib/server/db.ts",
-            "line": 232
-          },
           {
             "file": "src/routes/admin/content/[page]/+page.server.ts",
             "line": 56
@@ -2078,11 +1955,11 @@
           },
           {
             "file": "src/routes/brochure/print/[id]/+page.server.ts",
-            "line": 19
+            "line": 20
           },
           {
             "file": "src/routes/brochure/print/[id]/+page.server.ts",
-            "line": 26
+            "line": 27
           },
           {
             "file": "src/lib/components/ContactForm.svelte",
@@ -2114,7 +1991,7 @@
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 41
+            "line": 42
           },
           {
             "file": "src/routes/admin/brochure/+page.svelte",
@@ -2211,7 +2088,7 @@
       "name": "orphans",
       "summary": {
         "orphanFunctions": 0,
-        "functionsExamined": 171
+        "functionsExamined": 192
       },
       "offenders": []
     },
@@ -2219,7 +2096,7 @@
       "name": "designPatterns",
       "summary": {
         "roleFamilies": 4,
-        "predictedFiles": 26,
+        "predictedFiles": 28,
         "predictedFilesMissing": 0,
         "entities": 0,
         "entitiesOutOfRange": 0,
@@ -2227,15 +2104,15 @@
       },
       "offenders": {
         "roleFamilies": {
-          "+page.server.ts": 21,
-          "+page.svelte": 30,
+          "+page.server.ts": 23,
+          "+page.svelte": 31,
           "+page.ts": 5,
           "+server.ts": 8
         },
         "patterns": [
           {
             "pattern": "every +page.server.ts has a +page.svelte",
-            "predicted": 21,
+            "predicted": 23,
             "missing": []
           },
           {
@@ -2251,10 +2128,10 @@
     "inventory": {
       "name": "inventory",
       "summary": {
-        "pages": 30,
-        "components": 24,
+        "pages": 31,
+        "components": 25,
         "orphanComponents": 11,
-        "averagePageLines": 284
+        "averagePageLines": 275
       },
       "offenders": {
         "pages": [
@@ -2293,7 +2170,7 @@
           },
           {
             "page": "src/routes/admin/+page.svelte",
-            "lines": 439,
+            "lines": 447,
             "widgets": [
               "list",
               "badge"
@@ -2358,7 +2235,7 @@
           },
           {
             "page": "src/routes/+page.svelte",
-            "lines": 237,
+            "lines": 247,
             "widgets": [
               "list",
               "badge"
@@ -2395,17 +2272,17 @@
             ]
           },
           {
+            "page": "src/routes/contact/+page.svelte",
+            "lines": 135,
+            "widgets": [
+              "list"
+            ]
+          },
+          {
             "page": "src/routes/admin/login/+page.svelte",
             "lines": 134,
             "widgets": [
               "form"
-            ]
-          },
-          {
-            "page": "src/routes/contact/+page.svelte",
-            "lines": 134,
-            "widgets": [
-              "list"
             ]
           },
           {
@@ -2426,13 +2303,16 @@
             "widgets": []
           },
           {
-            "page": "src/routes/privacy-policy/+page.svelte",
-            "lines": 105,
-            "widgets": []
-          },
-          {
             "page": "src/routes/admin/staff/+page.svelte",
             "lines": 102,
+            "widgets": [
+              "form",
+              "list"
+            ]
+          },
+          {
+            "page": "src/routes/admin/testimonials/+page.svelte",
+            "lines": 99,
             "widgets": [
               "form",
               "list"
@@ -2468,6 +2348,11 @@
             "page": "src/routes/brochure/print/[id]/+page.svelte",
             "lines": 33,
             "widgets": []
+          },
+          {
+            "page": "src/routes/privacy-policy/+page.svelte",
+            "lines": 15,
+            "widgets": []
           }
         ],
         "componentReuse": [
@@ -2485,7 +2370,7 @@
           },
           {
             "component": "src/lib/components/brochure/BrochureDoc.svelte",
-            "reusedBy": 5
+            "reusedBy": 6
           },
           {
             "component": "src/lib/components/BadgeStrip.svelte",
@@ -2500,11 +2385,11 @@
             "reusedBy": 2
           },
           {
-            "component": "src/lib/components/ContactForm.svelte",
-            "reusedBy": 1
+            "component": "src/lib/components/admin/testimonials/TestimonialFields.svelte",
+            "reusedBy": 2
           },
           {
-            "component": "src/lib/components/CookieBanner.svelte",
+            "component": "src/lib/components/ContactForm.svelte",
             "reusedBy": 1
           },
           {
@@ -2521,6 +2406,10 @@
           },
           {
             "component": "src/lib/components/HeroSlideshow.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/testimonials/TestimonialEditor.svelte",
             "reusedBy": 1
           },
           {
@@ -2596,38 +2485,64 @@
     "fileAreas": {
       "name": "fileAreas",
       "summary": {
-        "totalFiles": 260,
-        "frontend": 172,
-        "backend": 34,
-        "shared": 19,
-        "docs": 10,
+        "totalFiles": 503,
+        "tooling": 192,
+        "frontend": 174,
+        "backend": 38,
+        "docs": 26,
+        "tests": 22,
+        "shared": 22,
+        "infrastructure": 11,
+        "database": 8,
         "api": 8,
-        "infrastructure": 8,
-        "database": 7,
         "other": 2
       },
       "offenders": [
         {
+          "area": "tooling",
+          "files": 192,
+          "sourceFiles": 0,
+          "sourceLines": 0
+        },
+        {
           "area": "frontend",
-          "files": 172,
-          "sourceFiles": 57,
-          "sourceLines": 11215
+          "files": 174,
+          "sourceFiles": 59,
+          "sourceLines": 11361
         },
         {
           "area": "backend",
-          "files": 34,
-          "sourceFiles": 34,
-          "sourceLines": 2407
-        },
-        {
-          "area": "shared",
-          "files": 19,
-          "sourceFiles": 18,
-          "sourceLines": 1558
+          "files": 38,
+          "sourceFiles": 38,
+          "sourceLines": 2657
         },
         {
           "area": "docs",
-          "files": 10,
+          "files": 26,
+          "sourceFiles": 0,
+          "sourceLines": 0
+        },
+        {
+          "area": "tests",
+          "files": 22,
+          "sourceFiles": 0,
+          "sourceLines": 0
+        },
+        {
+          "area": "shared",
+          "files": 22,
+          "sourceFiles": 21,
+          "sourceLines": 1580
+        },
+        {
+          "area": "infrastructure",
+          "files": 11,
+          "sourceFiles": 0,
+          "sourceLines": 0
+        },
+        {
+          "area": "database",
+          "files": 8,
           "sourceFiles": 0,
           "sourceLines": 0
         },
@@ -2636,18 +2551,6 @@
           "files": 8,
           "sourceFiles": 8,
           "sourceLines": 307
-        },
-        {
-          "area": "infrastructure",
-          "files": 8,
-          "sourceFiles": 0,
-          "sourceLines": 0
-        },
-        {
-          "area": "database",
-          "files": 7,
-          "sourceFiles": 0,
-          "sourceLines": 0
         },
         {
           "area": "other",
@@ -2674,9 +2577,73 @@
     "duplication": {
       "name": "duplication",
       "summary": {
-        "skipped": "jscpd is not installed (npm install -g jscpd)"
+        "clones": 21,
+        "duplicatedLines": 314,
+        "totalLines": 25404,
+        "duplicatedPercentage": 1.24
       },
-      "offenders": []
+      "offenders": [
+        {
+          "file": "src/routes/blog/+page.svelte",
+          "duplicatedLineInstances": 86
+        },
+        {
+          "file": "src/routes/admin/projects/[id]/+page.svelte",
+          "duplicatedLineInstances": 75
+        },
+        {
+          "file": "src/routes/admin/projects/+page.svelte",
+          "duplicatedLineInstances": 67
+        },
+        {
+          "file": "src/routes/admin/brochure/[id]/+page.svelte",
+          "duplicatedLineInstances": 57
+        },
+        {
+          "file": "src/routes/admin/content/[page]/+page.svelte",
+          "duplicatedLineInstances": 57
+        },
+        {
+          "file": "src/routes/admin/staff/[id]/+page.svelte",
+          "duplicatedLineInstances": 55
+        },
+        {
+          "file": "src/routes/admin/staff/+page.svelte",
+          "duplicatedLineInstances": 50
+        },
+        {
+          "file": "src/routes/admin/brochure/+page.svelte",
+          "duplicatedLineInstances": 41
+        },
+        {
+          "file": "src/routes/admin/badges/+page.svelte",
+          "duplicatedLineInstances": 32
+        },
+        {
+          "file": "src/routes/contact/+page.svelte",
+          "duplicatedLineInstances": 31
+        },
+        {
+          "file": "src/routes/services/+page.svelte",
+          "duplicatedLineInstances": 26
+        },
+        {
+          "file": "src/routes/ourcommunity/+page.svelte",
+          "duplicatedLineInstances": 25
+        },
+        {
+          "file": "src/routes/admin/enquiries/+page.svelte",
+          "duplicatedLineInstances": 21
+        },
+        {
+          "file": "src/routes/admin/rtw/+page.svelte",
+          "duplicatedLineInstances": 21
+        },
+        {
+          "file": "src/routes/admin/projects/+page.server.ts",
+          "duplicatedLineInstances": 21
+        }
+      ]
     }
   }
 }
