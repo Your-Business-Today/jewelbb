@@ -2,6 +2,7 @@
 	import Seo from '$lib/components/Seo.svelte';
 	import ContactForm from '$lib/components/ContactForm.svelte';
 	import TestimonialCard from '$lib/components/TestimonialCard.svelte';
+	import CalculatorLink from '$lib/components/calculator/CalculatorLink.svelte';
 	import { site } from '$lib/data/site';
 	import { pageText, paragraphs } from '$lib/content/pages';
 
@@ -71,6 +72,9 @@
 					</li>
 				</ul>
 			</div>
+			{#if data.isCalculatorLive}
+				<CalculatorLink />
+			{/if}
 			{#if data.testimonial}
 				<TestimonialCard testimonial={data.testimonial} />
 			{/if}
