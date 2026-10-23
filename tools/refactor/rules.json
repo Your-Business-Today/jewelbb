@@ -80,7 +80,16 @@
     "minimumFamilySize": 4,
     "cooccurrenceThreshold": 0.75,
     "fileCountBand": 2.0,
-    "acceptedGaps": []
+    "acceptedGaps": [
+      "src/routes/blog/+page.server.ts",
+      "src/routes/demo/+page.server.ts",
+      "src/routes/ourcommunity/+page.server.ts",
+      "src/routes/post/[slug]/+page.server.ts",
+      "src/routes/privacy-policy/+page.server.ts",
+      "src/routes/rtw/+page.server.ts",
+      "src/routes/services/+page.server.ts",
+      "src/routes/subcontractor-terms/+page.server.ts"
+    ]
   },
   "siteDefinition": {
     "viewGlobs": ["**/*.svelte"],

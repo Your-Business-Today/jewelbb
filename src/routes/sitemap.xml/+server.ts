@@ -1,6 +1,7 @@
 import { site } from '$lib/data/site';
 import { getProjects } from '$lib/server/projects';
 import { posts } from '$lib/blog';
+import { getCalculator } from '$lib/server/calculator';
 import type { RequestHandler } from './$types';
 
 // Rendered per-request so projects added in /admin appear automatically.
@@ -19,10 +20,15 @@ const staticPaths = [
 	'/subcontractor-terms'
 ];
 
+const calculatorPath = '/cost-calculator';
+
 export const GET: RequestHandler = async () => {
 	const projects = await getProjects();
+	const calculator = await getCalculator();
+	const calculatorPaths = calculator ? [calculatorPath] : [];
 	const urls = [
 		...staticPaths,
+		...calculatorPaths,
 		...projects.map((p) => `/${p.slug}`),
 		...posts.map((p) => `/post/${p.slug}`)
 	];
