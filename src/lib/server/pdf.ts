@@ -47,10 +47,10 @@ function baseArgs(): string[] {
 }
 
 /**
- * Capture `printUrl` (a /brochure/print/[id] page) as an A4 PDF.
+ * Capture `printUrl` (a bare print page, such as /brochure/print/[id]) as an A4 PDF.
  * Returns the raw PDF bytes.
  */
-export async function renderBrochurePdf(printUrl: string): Promise<Uint8Array> {
+export async function renderPrintPagePdf(printUrl: string): Promise<Uint8Array> {
 	const puppeteer = (await import('puppeteer-core')).default;
 	const { executablePath, args } = await resolveChromium();
 
@@ -64,7 +64,7 @@ export async function renderBrochurePdf(printUrl: string): Promise<Uint8Array> {
 	try {
 		const page = await browser.newPage();
 		await page.goto(printUrl, { waitUntil: 'networkidle0', timeout: 45_000 });
-		// Make sure the brochure fonts have finished loading before printing.
+		// Make sure the page's fonts have finished loading before printing.
 		await page.evaluate(() => document.fonts.ready.then(() => undefined));
 
 		const pdf = await page.pdf({

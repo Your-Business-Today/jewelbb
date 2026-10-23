@@ -7,9 +7,11 @@ export interface DecimalField {
 	isMinimumAllowed: boolean;
 }
 
+export type FieldSource = Pick<FormData, 'get'> | Pick<URLSearchParams, 'get'>;
+
 export type DecimalReading = { value: number; error?: undefined } | { error: string; value?: undefined };
 
-export function readText(form: FormData, name: string): string {
+export function readText(form: FieldSource, name: string): string {
 	return String(form.get(name) ?? '').trim();
 }
 
@@ -27,7 +29,7 @@ function rangeProblem(field: DecimalField, value: number): string | null {
 	return `${field.label} must be ${allowedRange}.`;
 }
 
-export function readDecimal(form: FormData, field: DecimalField): DecimalReading {
+export function readDecimal(form: FieldSource, field: DecimalField): DecimalReading {
 	const typed = readText(form, field.name);
 	if (!typed) return { error: `${field.label} is required.` };
 	const isWellFormed = decimalPattern(field.decimalPlaces).test(typed);

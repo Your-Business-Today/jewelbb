@@ -3,7 +3,7 @@
  */
 import { error } from '@sveltejs/kit';
 import { getActiveBrochure } from '$lib/server/brochures';
-import { pdfFilename, renderBrochurePdf } from '$lib/server/pdf';
+import { pdfFilename, renderPrintPagePdf } from '$lib/server/pdf';
 import type { RequestHandler } from './$types';
 
 export const prerender = false;
@@ -17,7 +17,7 @@ export const GET: RequestHandler = async ({ url }) => {
 	const title = active?.brochure.title ?? 'Jewel Bespoke Build — Brochure';
 
 	try {
-		const pdf = await renderBrochurePdf(`${url.origin}/brochure/print/${id}`);
+		const pdf = await renderPrintPagePdf(`${url.origin}/brochure/print/${id}`);
 		return new Response(new Uint8Array(pdf), {
 			headers: {
 				'Content-Type': 'application/pdf',

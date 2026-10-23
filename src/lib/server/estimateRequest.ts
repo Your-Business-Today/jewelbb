@@ -1,6 +1,6 @@
 import { EstimateLimits, ProjectTypes, SpecLevels } from '$lib/calculator/options';
 import { estimateFor, rateFor, type Calculator, type Estimate } from '$lib/calculator/estimate';
-import { readDecimal, readText, type DecimalField } from '$lib/server/formFields';
+import { readDecimal, readText, type DecimalField, type FieldSource } from '$lib/server/formFields';
 
 export type EstimateReading = { estimate: Estimate; error?: undefined } | { error: string; estimate?: undefined };
 
@@ -21,7 +21,7 @@ function choiceFrom<Value extends string>(options: readonly { value: Value }[], 
 	return chosen?.value;
 }
 
-export function estimateFrom(form: FormData, calculator: Calculator): EstimateReading {
+export function estimateFrom(form: FieldSource, calculator: Calculator): EstimateReading {
 	const projectType = choiceFrom(ProjectTypes, readText(form, 'project_type'));
 	if (!projectType) return { error: 'Choose the type of project.' };
 	const specLevel = choiceFrom(SpecLevels, readText(form, 'spec_level'));

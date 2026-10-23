@@ -1,21 +1,23 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
-	import { EstimateLimits } from '$lib/calculator/options';
+	import { EstimateLimits, SpecLevels } from '$lib/calculator/options';
 	import { offeredProjectTypes, offeredSpecLevels } from '$lib/calculator/offeredChoices';
 	import type { RateRow } from '$lib/calculator/estimate';
 
 	let { rates }: { rates: RateRow[] } = $props();
 
 	const projectTypes = $derived(offeredProjectTypes(rates));
-	let projectType = $state('');
-	const specLevels = $derived(offeredSpecLevels(rates, projectType));
+	const unchosen = '';
+	let projectType = $state(unchosen);
+	const hasChosenProjectType = $derived(projectType !== unchosen);
+	const specLevels = $derived(hasChosenProjectType ? offeredSpecLevels(rates, projectType) : SpecLevels);
 </script>
 
 <form method="POST" class="estimate-form" use:enhance={() => ({ update }) => update({ reset: false })}>
 	<label>
 		Type of project
 		<select name="project_type" required bind:value={projectType}>
-			<option value="" disabled>Choose one</option>
+			<option value={unchosen} disabled>Choose one</option>
 			{#each projectTypes as option (option.value)}
 				<option value={option.value}>{option.label}</option>
 			{/each}
@@ -23,7 +25,7 @@
 	</label>
 	<label>
 		Finish
-		<select name="spec_level" required disabled={!projectType}>
+		<select name="spec_level" required>
 			{#each specLevels as option (option.value)}
 				<option value={option.value}>{option.label}</option>
 			{/each}
