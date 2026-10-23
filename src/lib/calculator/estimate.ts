@@ -20,6 +20,7 @@ export interface VisitorDetails {
 	projectType: ProjectType;
 	specLevel: SpecLevel;
 	floorArea: number;
+	storeys: number;
 }
 
 export interface Estimate {
@@ -36,7 +37,7 @@ function roundedToStep(amount: number): number {
 	return Math.round(amount / roundingStep) * roundingStep;
 }
 
-export function rateFor(rates: RateRow[], details: Omit<VisitorDetails, 'floorArea'>): RateRow | undefined {
+export function rateFor(rates: RateRow[], details: Pick<VisitorDetails, 'projectType' | 'specLevel'>): RateRow | undefined {
 	return rates.find(
 		(rate) => rate.project_type === details.projectType && rate.spec_level === details.specLevel
 	);

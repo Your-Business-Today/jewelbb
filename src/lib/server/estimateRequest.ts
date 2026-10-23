@@ -1,6 +1,6 @@
 import { EstimateLimits, ProjectTypes, SpecLevels } from '$lib/calculator/options';
 import { estimateFor, rateFor, type Calculator, type Estimate } from '$lib/calculator/estimate';
-import { readDecimal, readText, type DecimalField, type FieldSource } from '$lib/server/formFields';
+import { readDecimal, readText, wholeNumber, type DecimalField, type FieldSource } from '$lib/server/formFields';
 
 export type EstimateReading = { estimate: Estimate; error?: undefined } | { error: string; estimate?: undefined };
 
@@ -10,6 +10,15 @@ const floorAreaField: DecimalField = {
 	minimum: EstimateLimits.floorAreaMinimum,
 	maximum: EstimateLimits.floorAreaMaximum,
 	decimalPlaces: 1,
+	isMinimumAllowed: true
+};
+
+const storeysField: DecimalField = {
+	name: 'storeys',
+	label: 'The number of storeys',
+	minimum: EstimateLimits.storeysMinimum,
+	maximum: EstimateLimits.storeysMaximum,
+	decimalPlaces: wholeNumber,
 	isMinimumAllowed: true
 };
 
@@ -28,8 +37,10 @@ export function estimateFrom(form: FieldSource, calculator: Calculator): Estimat
 	if (!specLevel) return { error: 'Choose the finish.' };
 	const floorArea = readDecimal(form, floorAreaField);
 	if (floorArea.error !== undefined) return { error: floorArea.error };
+	const storeys = readDecimal(form, storeysField);
+	if (storeys.error !== undefined) return { error: storeys.error };
 	const rate = rateFor(calculator.rates, { projectType, specLevel });
 	if (!rate) return { error: unpricedChoice };
-	const details = { projectType, specLevel, floorArea: floorArea.value };
+	const details = { projectType, specLevel, floorArea: floorArea.value, storeys: storeys.value };
 	return { estimate: estimateFor(details, rate, calculator.settings) };
 }

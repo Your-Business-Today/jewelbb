@@ -14,10 +14,14 @@ export type ProjectType = (typeof ProjectTypes)[number]['value'];
 
 export type SpecLevel = (typeof SpecLevels)[number]['value'];
 
+export const storeyChoices = [1, 2, 3];
+
 export const EstimateLimits = {
 	floorAreaMinimum: 5,
 	floorAreaMaximum: 2000,
 	floorAreaStep: 0.1,
+	storeysMinimum: Math.min(...storeyChoices),
+	storeysMaximum: Math.max(...storeyChoices),
 	rateMaximum: 100000,
 	rateStep: 0.01,
 	rangePercentMaximum: 50,

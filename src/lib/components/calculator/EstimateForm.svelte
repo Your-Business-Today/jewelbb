@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
-	import { EstimateLimits, SpecLevels } from '$lib/calculator/options';
+	import { EstimateLimits, SpecLevels, storeyChoices } from '$lib/calculator/options';
 	import { offeredProjectTypes, offeredSpecLevels } from '$lib/calculator/offeredChoices';
 	import type { RateRow } from '$lib/calculator/estimate';
 
@@ -42,6 +42,14 @@
 			step={EstimateLimits.floorAreaStep}
 			inputmode="decimal"
 		/>
+	</label>
+	<label>
+		Storeys
+		<select name="storeys" required>
+			{#each storeyChoices as storeys (storeys)}
+				<option value={storeys}>{storeys}</option>
+			{/each}
+		</select>
 	</label>
 	<button class="btn btn--primary" type="submit">Estimate my cost</button>
 </form>
