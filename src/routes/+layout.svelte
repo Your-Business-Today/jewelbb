@@ -6,9 +6,10 @@
 
 	let { children } = $props();
 
-	// The brochure print route is captured by the PDF generator and must be
-	// a bare document — no site chrome around the A4 pages.
-	const bare = $derived(page.url.pathname.startsWith('/brochure/print'));
+	// Print routes are captured by the PDF generator and must be
+	// bare documents — no site chrome around the A4 pages.
+	const printPaths = ['/brochure/print', '/cost-calculator/print'];
+	const bare = $derived(printPaths.some((path) => page.url.pathname.startsWith(path)));
 </script>
 
 {#if bare}

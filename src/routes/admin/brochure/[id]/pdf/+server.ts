@@ -6,7 +6,7 @@
 import { error } from '@sveltejs/kit';
 import { createPrintToken } from '$lib/server/auth';
 import { getBrochure } from '$lib/server/brochures';
-import { pdfFilename, renderBrochurePdf } from '$lib/server/pdf';
+import { pdfFilename, renderPrintPagePdf } from '$lib/server/pdf';
 import type { RequestHandler } from './$types';
 
 export const config = { maxDuration: 60 };
@@ -17,7 +17,7 @@ export const GET: RequestHandler = async ({ params, url }) => {
 
 	const token = await createPrintToken(params.id);
 	try {
-		const pdf = await renderBrochurePdf(
+		const pdf = await renderPrintPagePdf(
 			`${url.origin}/brochure/print/${params.id}?token=${encodeURIComponent(token)}`
 		);
 		return new Response(new Uint8Array(pdf), {
