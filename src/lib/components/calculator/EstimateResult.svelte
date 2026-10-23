@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { inPounds } from '$lib/calculator/money';
 	import { estimateBasis, estimateQuery } from '$lib/calculator/estimateBasis';
+	import HouseModel from '$lib/components/calculator/HouseModel.svelte';
 	import type { Estimate, EstimateSettings } from '$lib/calculator/estimate';
 
 	let { estimate, settings }: { estimate: Estimate; settings: EstimateSettings } = $props();
@@ -12,6 +13,7 @@
 	<span class="kicker">Your estimate</span>
 	<p class="estimate__range">{inPounds(estimate.low)} to {inPounds(estimate.high)}</p>
 	<p class="estimate__basis">{estimateBasis(estimate.details)}</p>
+	<HouseModel details={estimate.details} />
 	<p class="estimate__disclaimer">{settings.disclaimer}</p>
 	<div class="estimate__actions">
 		<a class="btn btn--primary" href="/contact">Request a free quote</a>
@@ -23,7 +25,6 @@
 	.estimate {
 		display: grid;
 		gap: 0.6rem;
-		justify-items: start;
 	}
 
 	.estimate__range {
