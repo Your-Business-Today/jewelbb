@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-22T10:34:33+00:00",
-  "kitVersion": "1.31.0",
+  "generatedAt": "2026-10-24T20:04:19+00:00",
+  "kitVersion": "1.34.0",
   "score": {
-    "overall": 68.6,
+    "overall": 71.6,
     "groups": [
       {
         "group": "Standard baseline checks",
-        "score": 58.4,
+        "score": 62.4,
         "weight": 60
       },
       {
@@ -16,7 +16,7 @@
       },
       {
         "group": "Prose",
-        "score": 83.7,
+        "score": 84.9,
         "weight": 20
       },
       {
@@ -40,8 +40,8 @@
         "unit": "files",
         "isMeasured": true,
         "offenders": 42,
-        "measuredAgainst": 126,
-        "score": 33.3
+        "measuredAgainst": 156,
+        "score": 46.2
       },
       {
         "key": "worstFile",
@@ -64,8 +64,8 @@
         "unit": "functions",
         "isMeasured": true,
         "offenders": 11,
-        "measuredAgainst": 192,
-        "score": 77.1
+        "measuredAgainst": 239,
+        "score": 81.6
       },
       {
         "key": "elseBlocks",
@@ -76,8 +76,8 @@
         "unit": "branches",
         "isMeasured": true,
         "offenders": 10,
-        "measuredAgainst": 382,
-        "score": 94.8
+        "measuredAgainst": 414,
+        "score": 95.2
       },
       {
         "key": "duplication",
@@ -87,9 +87,9 @@
         "zeroAt": 20,
         "unit": "",
         "isMeasured": true,
-        "offenders": 1.24,
+        "offenders": 1.27,
         "measuredAgainst": 1,
-        "score": 93.8
+        "score": 93.7
       },
       {
         "key": "comments",
@@ -100,8 +100,8 @@
         "unit": "thousand lines",
         "isMeasured": true,
         "offenders": 148,
-        "measuredAgainst": 15.9,
-        "score": 81.4
+        "measuredAgainst": 17.13,
+        "score": 82.7
       },
       {
         "key": "magicValues",
@@ -112,8 +112,8 @@
         "unit": "thousand lines",
         "isMeasured": true,
         "offenders": 247,
-        "measuredAgainst": 15.9,
-        "score": 22.4
+        "measuredAgainst": 17.13,
+        "score": 27.9
       },
       {
         "key": "orphans",
@@ -124,8 +124,8 @@
         "unit": "components and functions",
         "isMeasured": true,
         "offenders": 11,
-        "measuredAgainst": 217,
-        "score": 49.3
+        "measuredAgainst": 272,
+        "score": 59.6
       },
       {
         "key": "memberChains",
@@ -136,8 +136,8 @@
         "unit": "thousand lines",
         "isMeasured": true,
         "offenders": 100,
-        "measuredAgainst": 15.9,
-        "score": 79.0
+        "measuredAgainst": 17.13,
+        "score": 80.5
       },
       {
         "key": "deepIndentation",
@@ -148,7 +148,7 @@
         "unit": "thousand lines",
         "isMeasured": true,
         "offenders": 724,
-        "measuredAgainst": 15.9,
+        "measuredAgainst": 17.13,
         "score": 0.0
       },
       {
@@ -160,7 +160,7 @@
         "unit": "functions",
         "isMeasured": true,
         "offenders": 0,
-        "measuredAgainst": 192,
+        "measuredAgainst": 239,
         "score": 100.0
       },
       {
@@ -172,7 +172,7 @@
         "unit": "predicted files",
         "isMeasured": true,
         "offenders": 0,
-        "measuredAgainst": 28,
+        "measuredAgainst": 66,
         "score": 100.0
       },
       {
@@ -195,8 +195,8 @@
         "unit": "branches",
         "isMeasured": true,
         "offenders": 9,
-        "measuredAgainst": 382,
-        "score": 90.6
+        "measuredAgainst": 414,
+        "score": 91.3
       },
       {
         "key": "literalComparisons",
@@ -207,8 +207,8 @@
         "unit": "branches",
         "isMeasured": true,
         "offenders": 40,
-        "measuredAgainst": 382,
-        "score": 58.1
+        "measuredAgainst": 414,
+        "score": 61.4
       },
       {
         "key": "gluedAccessors",
@@ -219,7 +219,7 @@
         "unit": "functions",
         "isMeasured": true,
         "offenders": 0,
-        "measuredAgainst": 192,
+        "measuredAgainst": 239,
         "score": 100.0
       },
       {
@@ -250,17 +250,17 @@
     "fileLength": {
       "limit": 100,
       "filesOverLimit": 42,
-      "totalFiles": 126,
-      "totalLines": 15905,
+      "totalFiles": 156,
+      "totalLines": 17133,
       "worstFileLines": 1048,
       "worstFileTimesOverLimit": 9.48
     },
     "functionShape": {
       "limit": 30,
       "functionsOverLimit": 11,
-      "totalFunctions": 192,
+      "totalFunctions": 239,
       "elseBlocks": 10,
-      "ifBlocks": 382,
+      "ifBlocks": 414,
       "measurementIsHeuristic": true
     },
     "functionNames": {
@@ -273,14 +273,15 @@
       "measurementIsHeuristic": true
     },
     "duplication": {
-      "clones": 21,
-      "duplicatedLines": 314,
-      "totalLines": 25404,
-      "duplicatedPercentage": 1.24
+      "clones": 22,
+      "duplicatedLines": 342,
+      "totalLines": 26957,
+      "duplicatedPercentage": 1.27,
+      "carriedFromBaseline": true
     },
     "naming": {
-      "bannedAbbreviationHits": 160,
-      "unprefixedBooleans": 37
+      "bannedAbbreviationHits": 167,
+      "unprefixedBooleans": 40
     },
     "comments": {
       "explanatoryCommentLines": 148,
@@ -305,43 +306,43 @@
     },
     "orphans": {
       "orphanFunctions": 0,
-      "functionsExamined": 192
+      "functionsExamined": 239
     },
     "designPatterns": {
-      "roleFamilies": 4,
-      "predictedFiles": 28,
+      "roleFamilies": 6,
+      "predictedFiles": 66,
       "predictedFilesMissing": 0,
       "entities": 0,
       "entitiesOutOfRange": 0,
       "measurementIsHeuristic": true
     },
     "inventory": {
-      "pages": 31,
-      "components": 25,
+      "pages": 34,
+      "components": 33,
       "orphanComponents": 11,
-      "averagePageLines": 275
+      "averagePageLines": 256
     },
     "siteDefinition": {
       "skipped": "no siteDefinition catalogue in rules.json"
     },
     "inputValidation": {
-      "schemaTables": 9,
+      "schemaTables": 11,
       "limitedColumns": 0,
       "writeDoors": 0,
       "unvalidatedDoors": 0,
       "looserLimits": 0
     },
     "fileAreas": {
-      "totalFiles": 503,
-      "tooling": 192,
-      "frontend": 174,
-      "backend": 38,
+      "totalFiles": 566,
+      "tooling": 224,
+      "frontend": 185,
+      "backend": 46,
+      "shared": 32,
       "docs": 26,
       "tests": 22,
-      "shared": 22,
       "infrastructure": 11,
-      "database": 8,
-      "api": 8,
+      "database": 9,
+      "api": 9,
       "other": 2
     }
   },
@@ -351,8 +352,8 @@
       "summary": {
         "limit": 100,
         "filesOverLimit": 42,
-        "totalFiles": 126,
-        "totalLines": 15905,
+        "totalFiles": 156,
+        "totalLines": 17133,
         "worstFileLines": 1048,
         "worstFileTimesOverLimit": 9.48
       },
@@ -447,7 +448,7 @@
         },
         {
           "file": "src/routes/admin/+layout.svelte",
-          "lines": 215
+          "lines": 216
         },
         {
           "file": "src/lib/components/ContactForm.svelte",
@@ -490,12 +491,12 @@
           "lines": 140
         },
         {
-          "file": "src/routes/portfolio/+page.svelte",
+          "file": "src/routes/contact/+page.svelte",
           "lines": 139
         },
         {
-          "file": "src/routes/contact/+page.svelte",
-          "lines": 135
+          "file": "src/routes/portfolio/+page.svelte",
+          "lines": 139
         },
         {
           "file": "src/lib/server/auth.ts",
@@ -532,9 +533,9 @@
       "summary": {
         "limit": 30,
         "functionsOverLimit": 11,
-        "totalFunctions": 192,
+        "totalFunctions": 239,
         "elseBlocks": 10,
-        "ifBlocks": 382,
+        "ifBlocks": 414,
         "measurementIsHeuristic": true
       },
       "offenders": [
@@ -626,8 +627,8 @@
     "naming": {
       "name": "naming",
       "summary": {
-        "bannedAbbreviationHits": 160,
-        "unprefixedBooleans": 37
+        "bannedAbbreviationHits": 167,
+        "unprefixedBooleans": 40
       },
       "offenders": {
         "abbreviations": [
@@ -944,6 +945,21 @@
             "name": "prerender"
           },
           {
+            "file": "src/routes/cost-calculator/+page.ts",
+            "line": 1,
+            "name": "prerender"
+          },
+          {
+            "file": "src/routes/cost-calculator/pdf/+server.ts",
+            "line": 6,
+            "name": "prerender"
+          },
+          {
+            "file": "src/routes/cost-calculator/print/+page.server.ts",
+            "line": 4,
+            "name": "prerender"
+          },
+          {
             "file": "src/routes/ourcommunity/+page.ts",
             "line": 2,
             "name": "prerender"
@@ -965,7 +981,7 @@
           },
           {
             "file": "src/routes/sitemap.xml/+server.ts",
-            "line": 7,
+            "line": 8,
             "name": "prerender"
           },
           {
@@ -1085,19 +1101,19 @@
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 68
+            "line": 69
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 77
+            "line": 78
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 134
+            "line": 135
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 172
+            "line": 173
           },
           {
             "file": "src/routes/admin/+page.svelte",
@@ -1409,7 +1425,7 @@
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 11
+            "line": 12
           },
           {
             "file": "src/routes/+page.svelte",
@@ -1445,7 +1461,7 @@
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 21
+            "line": 22
           },
           {
             "file": "src/routes/admin/+page.svelte",
@@ -1991,7 +2007,7 @@
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 42
+            "line": 43
           },
           {
             "file": "src/routes/admin/brochure/+page.svelte",
@@ -2088,15 +2104,15 @@
       "name": "orphans",
       "summary": {
         "orphanFunctions": 0,
-        "functionsExamined": 192
+        "functionsExamined": 239
       },
       "offenders": []
     },
     "designPatterns": {
       "name": "designPatterns",
       "summary": {
-        "roleFamilies": 4,
-        "predictedFiles": 28,
+        "roleFamilies": 6,
+        "predictedFiles": 66,
         "predictedFilesMissing": 0,
         "entities": 0,
         "entitiesOutOfRange": 0,
@@ -2104,20 +2120,27 @@
       },
       "offenders": {
         "roleFamilies": {
-          "+page.server.ts": 23,
-          "+page.svelte": 31,
-          "+page.ts": 5,
-          "+server.ts": 8
+          "+page.server.ts": 26,
+          "+page.svelte": 34,
+          "+page.ts": 6,
+          "+server.ts": 9,
+          "fields": 4,
+          "form": 4
         },
         "patterns": [
           {
             "pattern": "every +page.server.ts has a +page.svelte",
-            "predicted": 23,
+            "predicted": 26,
             "missing": []
           },
           {
             "pattern": "every +page.ts has a +page.svelte",
-            "predicted": 5,
+            "predicted": 6,
+            "missing": []
+          },
+          {
+            "pattern": "every +page.svelte has a +page.server.ts",
+            "predicted": 34,
             "missing": []
           }
         ],
@@ -2128,10 +2151,10 @@
     "inventory": {
       "name": "inventory",
       "summary": {
-        "pages": 31,
-        "components": 25,
+        "pages": 34,
+        "components": 33,
         "orphanComponents": 11,
-        "averagePageLines": 275
+        "averagePageLines": 256
       },
       "offenders": {
         "pages": [
@@ -2265,15 +2288,15 @@
             ]
           },
           {
-            "page": "src/routes/portfolio/+page.svelte",
+            "page": "src/routes/contact/+page.svelte",
             "lines": 139,
             "widgets": [
               "list"
             ]
           },
           {
-            "page": "src/routes/contact/+page.svelte",
-            "lines": 135,
+            "page": "src/routes/portfolio/+page.svelte",
+            "lines": 139,
             "widgets": [
               "list"
             ]
@@ -2340,13 +2363,30 @@
             ]
           },
           {
+            "page": "src/routes/admin/calculator/+page.svelte",
+            "lines": 77,
+            "widgets": [
+              "form"
+            ]
+          },
+          {
             "page": "src/routes/brochure/+page.svelte",
             "lines": 73,
             "widgets": []
           },
           {
+            "page": "src/routes/cost-calculator/+page.svelte",
+            "lines": 57,
+            "widgets": []
+          },
+          {
             "page": "src/routes/brochure/print/[id]/+page.svelte",
             "lines": 33,
+            "widgets": []
+          },
+          {
+            "page": "src/routes/cost-calculator/print/+page.svelte",
+            "lines": 26,
             "widgets": []
           },
           {
@@ -2358,7 +2398,7 @@
         "componentReuse": [
           {
             "component": "src/lib/components/Seo.svelte",
-            "reusedBy": 12
+            "reusedBy": 13
           },
           {
             "component": "src/lib/components/CtaBand.svelte",
@@ -2409,7 +2449,39 @@
             "reusedBy": 1
           },
           {
+            "component": "src/lib/components/admin/calculator/EstimateSettingsFields.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/calculator/RateGridFields.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/calculator/RateInput.svelte",
+            "reusedBy": 1
+          },
+          {
             "component": "src/lib/components/admin/testimonials/TestimonialEditor.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/calculator/CalculatorLink.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/calculator/EstimateForm.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/calculator/EstimateResult.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/calculator/EstimateSheet.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/calculator/HouseModel.svelte",
             "reusedBy": 1
           },
           {
@@ -2485,36 +2557,42 @@
     "fileAreas": {
       "name": "fileAreas",
       "summary": {
-        "totalFiles": 503,
-        "tooling": 192,
-        "frontend": 174,
-        "backend": 38,
+        "totalFiles": 566,
+        "tooling": 224,
+        "frontend": 185,
+        "backend": 46,
+        "shared": 32,
         "docs": 26,
         "tests": 22,
-        "shared": 22,
         "infrastructure": 11,
-        "database": 8,
-        "api": 8,
+        "database": 9,
+        "api": 9,
         "other": 2
       },
       "offenders": [
         {
           "area": "tooling",
-          "files": 192,
+          "files": 224,
           "sourceFiles": 0,
           "sourceLines": 0
         },
         {
           "area": "frontend",
-          "files": 174,
-          "sourceFiles": 59,
-          "sourceLines": 11361
+          "files": 185,
+          "sourceFiles": 70,
+          "sourceLines": 11915
         },
         {
           "area": "backend",
-          "files": 38,
-          "sourceFiles": 38,
-          "sourceLines": 2657
+          "files": 46,
+          "sourceFiles": 46,
+          "sourceLines": 2977
+        },
+        {
+          "area": "shared",
+          "files": 32,
+          "sourceFiles": 31,
+          "sourceLines": 1897
         },
         {
           "area": "docs",
@@ -2529,12 +2607,6 @@
           "sourceLines": 0
         },
         {
-          "area": "shared",
-          "files": 22,
-          "sourceFiles": 21,
-          "sourceLines": 1580
-        },
-        {
           "area": "infrastructure",
           "files": 11,
           "sourceFiles": 0,
@@ -2542,15 +2614,15 @@
         },
         {
           "area": "database",
-          "files": 8,
+          "files": 9,
           "sourceFiles": 0,
           "sourceLines": 0
         },
         {
           "area": "api",
-          "files": 8,
-          "sourceFiles": 8,
-          "sourceLines": 307
+          "files": 9,
+          "sourceFiles": 9,
+          "sourceLines": 344
         },
         {
           "area": "other",
@@ -2563,7 +2635,7 @@
     "inputValidation": {
       "name": "inputValidation",
       "summary": {
-        "schemaTables": 9,
+        "schemaTables": 11,
         "limitedColumns": 0,
         "writeDoors": 0,
         "unvalidatedDoors": 0,
@@ -2577,10 +2649,11 @@
     "duplication": {
       "name": "duplication",
       "summary": {
-        "clones": 21,
-        "duplicatedLines": 314,
-        "totalLines": 25404,
-        "duplicatedPercentage": 1.24
+        "clones": 22,
+        "duplicatedLines": 342,
+        "totalLines": 26957,
+        "duplicatedPercentage": 1.27,
+        "carriedFromBaseline": true
       },
       "offenders": [
         {
@@ -2612,8 +2685,16 @@
           "duplicatedLineInstances": 50
         },
         {
+          "file": "src/routes/admin/testimonials/+page.svelte",
+          "duplicatedLineInstances": 44
+        },
+        {
           "file": "src/routes/admin/brochure/+page.svelte",
           "duplicatedLineInstances": 41
+        },
+        {
+          "file": "src/routes/admin/calculator/+page.svelte",
+          "duplicatedLineInstances": 33
         },
         {
           "file": "src/routes/admin/badges/+page.svelte",
@@ -2633,14 +2714,6 @@
         },
         {
           "file": "src/routes/admin/enquiries/+page.svelte",
-          "duplicatedLineInstances": 21
-        },
-        {
-          "file": "src/routes/admin/rtw/+page.svelte",
-          "duplicatedLineInstances": 21
-        },
-        {
-          "file": "src/routes/admin/projects/+page.server.ts",
           "duplicatedLineInstances": 21
         }
       ]
