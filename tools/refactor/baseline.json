@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-24T20:03:50+00:00",
-  "kitVersion": "1.34.0",
+  "generatedAt": "2026-10-25T10:13:26+00:00",
+  "kitVersion": "1.35.0",
   "score": {
-    "overall": 71.6,
+    "overall": 69.4,
     "groups": [
       {
         "group": "Standard baseline checks",
-        "score": 62.4,
-        "weight": 60
+        "score": 57.6,
+        "weight": 52
       },
       {
         "group": "Design pattern file count",
@@ -86,10 +86,9 @@
         "weight": 8,
         "zeroAt": 20,
         "unit": "",
-        "isMeasured": true,
-        "offenders": 1.27,
-        "measuredAgainst": 1,
-        "score": 93.7
+        "isMeasured": false,
+        "offenders": null,
+        "score": null
       },
       {
         "key": "comments",
@@ -273,10 +272,7 @@
       "measurementIsHeuristic": true
     },
     "duplication": {
-      "clones": 22,
-      "duplicatedLines": 342,
-      "totalLines": 26957,
-      "duplicatedPercentage": 1.27
+      "skipped": "jscpd is not installed (npm install -g jscpd)"
     },
     "naming": {
       "bannedAbbreviationHits": 167,
@@ -332,13 +328,13 @@
       "looserLimits": 0
     },
     "fileAreas": {
-      "totalFiles": 566,
-      "tooling": 224,
+      "totalFiles": 580,
+      "tooling": 232,
       "frontend": 185,
       "backend": 46,
       "shared": 32,
+      "tests": 28,
       "docs": 26,
-      "tests": 22,
       "infrastructure": 11,
       "database": 9,
       "api": 9,
@@ -2556,13 +2552,13 @@
     "fileAreas": {
       "name": "fileAreas",
       "summary": {
-        "totalFiles": 566,
-        "tooling": 224,
+        "totalFiles": 580,
+        "tooling": 232,
         "frontend": 185,
         "backend": 46,
         "shared": 32,
+        "tests": 28,
         "docs": 26,
-        "tests": 22,
         "infrastructure": 11,
         "database": 9,
         "api": 9,
@@ -2571,7 +2567,7 @@
       "offenders": [
         {
           "area": "tooling",
-          "files": 224,
+          "files": 232,
           "sourceFiles": 0,
           "sourceLines": 0
         },
@@ -2594,14 +2590,14 @@
           "sourceLines": 1897
         },
         {
-          "area": "docs",
-          "files": 26,
+          "area": "tests",
+          "files": 28,
           "sourceFiles": 0,
           "sourceLines": 0
         },
         {
-          "area": "tests",
-          "files": 22,
+          "area": "docs",
+          "files": 26,
           "sourceFiles": 0,
           "sourceLines": 0
         },
@@ -2648,73 +2644,9 @@
     "duplication": {
       "name": "duplication",
       "summary": {
-        "clones": 22,
-        "duplicatedLines": 342,
-        "totalLines": 26957,
-        "duplicatedPercentage": 1.27
+        "skipped": "jscpd is not installed (npm install -g jscpd)"
       },
-      "offenders": [
-        {
-          "file": "src/routes/blog/+page.svelte",
-          "duplicatedLineInstances": 86
-        },
-        {
-          "file": "src/routes/admin/projects/[id]/+page.svelte",
-          "duplicatedLineInstances": 75
-        },
-        {
-          "file": "src/routes/admin/projects/+page.svelte",
-          "duplicatedLineInstances": 67
-        },
-        {
-          "file": "src/routes/admin/brochure/[id]/+page.svelte",
-          "duplicatedLineInstances": 57
-        },
-        {
-          "file": "src/routes/admin/content/[page]/+page.svelte",
-          "duplicatedLineInstances": 57
-        },
-        {
-          "file": "src/routes/admin/staff/[id]/+page.svelte",
-          "duplicatedLineInstances": 55
-        },
-        {
-          "file": "src/routes/admin/staff/+page.svelte",
-          "duplicatedLineInstances": 50
-        },
-        {
-          "file": "src/routes/admin/testimonials/+page.svelte",
-          "duplicatedLineInstances": 44
-        },
-        {
-          "file": "src/routes/admin/brochure/+page.svelte",
-          "duplicatedLineInstances": 41
-        },
-        {
-          "file": "src/routes/admin/calculator/+page.svelte",
-          "duplicatedLineInstances": 33
-        },
-        {
-          "file": "src/routes/admin/badges/+page.svelte",
-          "duplicatedLineInstances": 32
-        },
-        {
-          "file": "src/routes/contact/+page.svelte",
-          "duplicatedLineInstances": 31
-        },
-        {
-          "file": "src/routes/services/+page.svelte",
-          "duplicatedLineInstances": 26
-        },
-        {
-          "file": "src/routes/ourcommunity/+page.svelte",
-          "duplicatedLineInstances": 25
-        },
-        {
-          "file": "src/routes/admin/enquiries/+page.svelte",
-          "duplicatedLineInstances": 21
-        }
-      ]
+      "offenders": []
     }
   }
 }
