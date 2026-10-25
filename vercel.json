@@ -10,5 +10,10 @@
 			"destination": "/subcontractor-terms",
 			"permanent": true
 		}
-	]
+	],
+	"git": {
+		"deploymentEnabled": {
+			"staging": false
+		}
+	}
 }
