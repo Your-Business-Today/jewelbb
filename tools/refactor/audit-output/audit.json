@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-25T10:13:27+00:00",
-  "kitVersion": "1.35.0",
+  "generatedAt": "2026-10-25T18:37:44+00:00",
+  "kitVersion": "1.35.1",
   "score": {
     "overall": 69.4,
     "groups": [
@@ -272,8 +272,7 @@
       "measurementIsHeuristic": true
     },
     "duplication": {
-      "skipped": "jscpd is not installed (npm install -g jscpd)",
-      "carriedFromBaseline": true
+      "skipped": "jscpd is not installed (npm install -g jscpd)"
     },
     "naming": {
       "bannedAbbreviationHits": 167,
@@ -329,14 +328,14 @@
       "looserLimits": 0
     },
     "fileAreas": {
-      "totalFiles": 580,
-      "tooling": 232,
+      "totalFiles": 582,
+      "tooling": 233,
       "frontend": 185,
       "backend": 46,
       "shared": 32,
       "tests": 28,
       "docs": 26,
-      "infrastructure": 11,
+      "infrastructure": 12,
       "database": 9,
       "api": 9,
       "other": 2
@@ -2553,14 +2552,14 @@
     "fileAreas": {
       "name": "fileAreas",
       "summary": {
-        "totalFiles": 580,
-        "tooling": 232,
+        "totalFiles": 582,
+        "tooling": 233,
         "frontend": 185,
         "backend": 46,
         "shared": 32,
         "tests": 28,
         "docs": 26,
-        "infrastructure": 11,
+        "infrastructure": 12,
         "database": 9,
         "api": 9,
         "other": 2
@@ -2568,7 +2567,7 @@
       "offenders": [
         {
           "area": "tooling",
-          "files": 232,
+          "files": 233,
           "sourceFiles": 0,
           "sourceLines": 0
         },
@@ -2604,7 +2603,7 @@
         },
         {
           "area": "infrastructure",
-          "files": 11,
+          "files": 12,
           "sourceFiles": 0,
           "sourceLines": 0
         },
@@ -2645,8 +2644,7 @@
     "duplication": {
       "name": "duplication",
       "summary": {
-        "skipped": "jscpd is not installed (npm install -g jscpd)",
-        "carriedFromBaseline": true
+        "skipped": "jscpd is not installed (npm install -g jscpd)"
       },
       "offenders": []
     }
