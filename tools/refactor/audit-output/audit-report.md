@@ -1,6 +1,6 @@
 # Refactor audit
 
-Generated 2026-11-01 07:27 UTC.
+Generated 2026-11-01 08:08 UTC.
 
 ## Headline
 
@@ -41,16 +41,16 @@ Each element scores 100% with no offenders and falls in a straight line to 0% wh
 | Area | Files | Of which audited source | Source lines |
 | --- | --- | --- | --- |
 | frontend | 244 | 123 | 11,005 |
-| tooling | 238 | 0 | 0 |
+| tooling | 234 | 0 | 0 |
 | shared | 50 | 48 | 2,488 |
 | backend | 46 | 46 | 2,977 |
-| docs | 31 | 0 | 0 |
 | tests | 28 | 0 | 0 |
+| docs | 27 | 0 | 0 |
 | infrastructure | 12 | 0 | 0 |
 | database | 9 | 0 | 0 |
 | api | 9 | 9 | 344 |
 | other | 2 | 0 | 0 |
-| **whole repository** | **669** | **226** | **16,814** |
+| **whole repository** | **661** | **226** | **16,814** |
 
 ## Summary
 
@@ -67,11 +67,11 @@ Each element scores 100% with no offenders and falls in a straight line to 0% wh
 | prose | longMemberChainLines: 94, deeplyIndentedLines: 273, overlongLines: 99, measurementIsHeuristic: True |
 | conditions | tangledConditionLines: 3, literalComparisonLines: 35, measurementIsHeuristic: True |
 | orphans | orphanFunctions: 0, functionsExamined: 265 |
-| designPatterns | roleFamilies: 7, predictedFiles: 66, predictedFilesMissing: 0, entities: 0, entitiesOutOfRange: 0, measurementIsHeuristic: True |
+| designPatterns | roleFamilies: 7, predictedFiles: 66, predictedFilesMissing: 0, entities: 0, entitiesOutOfRange: 0, entitiesAccepted: 0, measurementIsHeuristic: True |
 | inventory | pages: 34, components: 79, orphanComponents: 11, averagePageLines: 158 |
 | siteDefinition | skipped: no siteDefinition catalogue in rules.json |
 | inputValidation | schemaTables: 11, limitedColumns: 0, writeDoors: 0, unvalidatedDoors: 0, looserLimits: 0 |
-| fileAreas | totalFiles: 669, frontend: 244, tooling: 238, shared: 50, backend: 46, docs: 31, tests: 28, infrastructure: 12, database: 9, api: 9, other: 2 |
+| fileAreas | totalFiles: 661, frontend: 244, tooling: 234, shared: 50, backend: 46, tests: 28, docs: 27, infrastructure: 12, database: 9, api: 9, other: 2 |
 
 ## Against the baseline
 
