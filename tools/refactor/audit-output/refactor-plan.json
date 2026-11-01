@@ -1,0 +1,1693 @@
+{
+  "score": 81.2,
+  "steps": [
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/admin/+page.svelte` (447 lines) into components",
+      "detail": "Component-sized blocks: lines 99\u2013113 (15 lines); lines 115\u2013142 (28 lines); lines 144\u2013158 (15 lines, taking when); lines 162\u2013179 (18 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/admin/projects/[id]/+page.svelte` (383 lines) into components",
+      "detail": "Component-sized blocks: lines 34\u201394 (61 lines); lines 96\u2013146 (51 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/admin/brochure/[id]/+page.svelte` (378 lines) into components",
+      "detail": "Component-sized blocks: lines 22\u201356 (35 lines); lines 58\u201379 (22 lines); lines 81\u2013130 (50 lines, taking pageTitle)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/admin/brochure/+page.svelte` (310 lines) into components",
+      "detail": "Component-sized blocks: lines 20\u201332 (13 lines); lines 52\u201376 (25 lines); lines 78\u2013134 (57 lines, taking fmtDate)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/admin/content/[page]/+page.svelte` (300 lines) into components",
+      "detail": "Component-sized blocks: lines 45\u201363 (19 lines, taking changed, rows); lines 121\u2013132 (12 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/admin/badges/+page.svelte` (298 lines) into components",
+      "detail": "Component-sized blocks: lines 37\u201394 (58 lines); lines 97\u2013109 (13 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/admin/slideshow/+page.svelte` (288 lines) into components",
+      "detail": "Component-sized blocks: lines 64\u2013121 (58 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/admin/rtw/+page.svelte` (249 lines) into components",
+      "detail": "Component-sized blocks: lines 40\u2013114 (75 lines, taking ukDate, ukDateTime, outcomeClass)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/+page.svelte` (247 lines) into components",
+      "detail": "Component-sized blocks: lines 45\u201358 (14 lines); lines 61\u201376 (16 lines); lines 79\u201398 (20 lines); lines 101\u2013116 (16 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/lib/components/admin/ImagePicker.svelte` (243 lines) into components",
+      "detail": "Component-sized blocks: lines 64\u2013130 (67 lines, taking pick, uploadFiles)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/admin/projects/+page.svelte` (232 lines) into components",
+      "detail": "Component-sized blocks: lines 24\u201379 (56 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/admin/+layout.svelte` (216 lines) into components",
+      "detail": "Component-sized blocks: lines 30\u201362 (33 lines, taking isActive)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/lib/components/ContactForm.svelte` (196 lines) into components",
+      "detail": "Component-sized blocks: lines 43\u2013107 (65 lines, taking submit)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/about/+page.svelte` (195 lines) into components",
+      "detail": "Component-sized blocks: lines 24\u201335 (12 lines); lines 37\u201357 (21 lines); lines 59\u201380 (22 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/admin/staff/[id]/+page.svelte` (195 lines) into components",
+      "detail": "Component-sized blocks: lines 21\u201355 (35 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/lib/components/HeroSlideshow.svelte` (184 lines) into components",
+      "detail": "Component-sized blocks: lines 39\u201378 (40 lines, taking go)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/lib/components/Header.svelte` (169 lines) into components",
+      "detail": "Component-sized blocks: lines 14\u201349 (36 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/lib/components/Footer.svelte` (165 lines) into components",
+      "detail": "Component-sized blocks: lines 14\u201368 (55 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/lib/components/brochure/PageProjectDetail.svelte` (155 lines) into components",
+      "detail": "Component-sized blocks: lines 15\u201357 (43 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/lib/components/Gallery.svelte` (145 lines) into components",
+      "detail": "Component-sized blocks: lines 42\u201360 (19 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/lib/components/brochure/PageBackCover.svelte` (140 lines) into components",
+      "detail": "Component-sized blocks: lines 6\u201347 (42 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/contact/+page.svelte` (139 lines) into components",
+      "detail": "Component-sized blocks: lines 47\u201383 (37 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/portfolio/+page.svelte` (139 lines) into components",
+      "detail": "Component-sized blocks: lines 19\u201339 (21 lines); lines 41\u201358 (18 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/admin/login/+page.svelte` (134 lines) into components",
+      "detail": "Component-sized blocks: lines 13\u201361 (49 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/lib/components/brochure/PageTeam.svelte` (127 lines) into components",
+      "detail": "Component-sized blocks: lines 14\u201344 (31 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/post/[slug]/+page.svelte` (125 lines) into components",
+      "detail": "Component-sized blocks: lines 24\u201361 (38 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/admin/content/+page.svelte` (117 lines) into components",
+      "detail": "Component-sized blocks: lines 25\u201340 (16 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/[area]/+page.svelte` (111 lines) into components",
+      "detail": "Component-sized blocks: lines 18\u201332 (15 lines); lines 42\u201354 (13 lines)."
+    },
+    {
+      "pass": "Pass 2 \u2014 Component breakout",
+      "title": "Break `src/routes/admin/staff/+page.svelte` (102 lines) into components",
+      "detail": "Component-sized blocks: lines 18\u201340 (23 lines)."
+    },
+    {
+      "pass": "Pass 3 \u2014 Utility function identification",
+      "title": "Remove the 11 components and functions nothing calls",
+      "detail": "Listed in audit.json under details.orphans and details.inventory.offenders.orphans; confirm each has no caller before it goes."
+    },
+    {
+      "pass": "Pass 4 \u2014 Design pattern identification",
+      "title": "Divide `src/lib/content/pages.ts` (334 lines) into the units its pattern names",
+      "detail": "7 functions; the longest is 12 lines."
+    },
+    {
+      "pass": "Pass 4 \u2014 Design pattern identification",
+      "title": "Divide `src/lib/brochure/defaults.ts` (321 lines) into the units its pattern names",
+      "detail": "1 functions; the longest is 300 lines."
+    },
+    {
+      "pass": "Pass 4 \u2014 Design pattern identification",
+      "title": "Divide `src/lib/brochure/templates.ts` (303 lines) into the units its pattern names",
+      "detail": "1 functions; the longest is 3 lines."
+    },
+    {
+      "pass": "Pass 4 \u2014 Design pattern identification",
+      "title": "Divide `src/lib/server/db.ts` (301 lines) into the units its pattern names",
+      "detail": "17 functions; the longest is 22 lines."
+    },
+    {
+      "pass": "Pass 4 \u2014 Design pattern identification",
+      "title": "Divide `src/lib/server/brochures.ts` (300 lines) into the units its pattern names",
+      "detail": "19 functions; the longest is 41 lines."
+    },
+    {
+      "pass": "Pass 4 \u2014 Design pattern identification",
+      "title": "Divide `src/lib/data/projects.ts` (269 lines) into the units its pattern names",
+      "detail": "0 functions; the longest is 0 lines."
+    },
+    {
+      "pass": "Pass 4 \u2014 Design pattern identification",
+      "title": "Divide `src/routes/admin/projects/[id]/+page.server.ts` (144 lines) into the units its pattern names",
+      "detail": "3 functions; the longest is 8 lines."
+    },
+    {
+      "pass": "Pass 4 \u2014 Design pattern identification",
+      "title": "Divide `src/lib/server/auth.ts` (134 lines) into the units its pattern names",
+      "detail": "13 functions; the longest is 13 lines."
+    },
+    {
+      "pass": "Pass 5 \u2014 The sweep to zero",
+      "title": "Inline magic values: 225 to zero",
+      "detail": "Scores 33.1% at weight 4; the offenders are in audit.json under details.magicValues, fifty at a time."
+    },
+    {
+      "pass": "Pass 5 \u2014 The sweep to zero",
+      "title": "Deeply indented lines: 273 to zero",
+      "detail": "Scores 45.9% at weight 4; the offenders are in audit.json under details.prose, fifty at a time."
+    },
+    {
+      "pass": "Pass 5 \u2014 The sweep to zero",
+      "title": "Conditions compared to a raw literal: 35 to zero",
+      "detail": "Scores 66.4% at weight 6; the offenders are in audit.json under details.conditions, fifty at a time."
+    },
+    {
+      "pass": "Pass 5 \u2014 The sweep to zero",
+      "title": "Long member chain lines: 94 to zero",
+      "detail": "Scores 81.4% at weight 4; the offenders are in audit.json under details.prose, fifty at a time."
+    },
+    {
+      "pass": "Pass 5 \u2014 The sweep to zero",
+      "title": "Functions over the line limit: 11 to zero",
+      "detail": "Scores 83.4% at weight 8; the offenders are in audit.json under details.functionShape, fifty at a time."
+    },
+    {
+      "pass": "Pass 5 \u2014 The sweep to zero",
+      "title": "Explanatory comment lines: 115 to zero",
+      "detail": "Scores 86.3% at weight 4; the offenders are in audit.json under details.comments, fifty at a time."
+    },
+    {
+      "pass": "Pass 5 \u2014 The sweep to zero",
+      "title": "Duplication %: 1.36 to zero",
+      "detail": "Scores 93.2% at weight 8; the offenders are in audit.json under details.duplication, fifty at a time."
+    },
+    {
+      "pass": "Pass 5 \u2014 The sweep to zero",
+      "title": "Else blocks: 6 to zero",
+      "detail": "Scores 97.1% at weight 5; the offenders are in audit.json under details.functionShape, fifty at a time."
+    },
+    {
+      "pass": "Pass 5 \u2014 The sweep to zero",
+      "title": "Conditions with calls tangled inside calls: 3 to zero",
+      "detail": "Scores 97.1% at weight 8; the offenders are in audit.json under details.conditions, fifty at a time."
+    }
+  ],
+  "targets": [
+    {
+      "file": "src/routes/admin/+page.svelte",
+      "lines": 447,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "{#if !data.configured}",
+          "firstLine": 99,
+          "lastLine": 113,
+          "lines": 15
+        },
+        {
+          "opens": "<a class=\"card hero\" href=\"/admin/enquiries\" class:hero--alert={data.newEnquiryC",
+          "firstLine": 115,
+          "lastLine": 142,
+          "lines": 28
+        },
+        {
+          "opens": "{#if data.recentEnquiries.length > 0}",
+          "firstLine": 144,
+          "lastLine": 158,
+          "lines": 15
+        },
+        {
+          "opens": "<div class=\"tiles\">",
+          "firstLine": 162,
+          "lastLine": 179,
+          "lines": 18
+        }
+      ],
+      "functions": [
+        {
+          "name": "when",
+          "line": 11,
+          "lines": 7,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": 144
+        }
+      ]
+    },
+    {
+      "file": "src/routes/admin/projects/[id]/+page.svelte",
+      "lines": 383,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<form class=\"card editor\" method=\"POST\" action=\"?/save\" use:enhance>",
+          "firstLine": 34,
+          "lastLine": 94,
+          "lines": 61
+        },
+        {
+          "opens": "<section class=\"card gallery-card\">",
+          "firstLine": 96,
+          "lastLine": 146,
+          "lines": 51
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/routes/admin/brochure/[id]/+page.svelte",
+      "lines": 378,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<div class=\"head\">",
+          "firstLine": 22,
+          "lastLine": 56,
+          "lines": 35
+        },
+        {
+          "opens": "<div class=\"adders\">",
+          "firstLine": 58,
+          "lastLine": 79,
+          "lines": 22
+        },
+        {
+          "opens": "{#if pages.length === 0}",
+          "firstLine": 81,
+          "lastLine": 130,
+          "lines": 50
+        }
+      ],
+      "functions": [
+        {
+          "name": "pageTitle",
+          "line": 11,
+          "lines": 3,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": 81
+        }
+      ]
+    },
+    {
+      "file": "src/lib/content/pages.ts",
+      "lines": 334,
+      "isView": false,
+      "blocks": [],
+      "functions": [
+        {
+          "name": "seo",
+          "line": 35,
+          "lines": 12,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "hero",
+          "line": 48,
+          "lines": 7,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "getContentPage",
+          "line": 292,
+          "lines": 3,
+          "importedBy": [
+            "src/routes/admin/content/[page]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "pageText",
+          "line": 297,
+          "lines": 12,
+          "importedBy": [
+            "src/lib/components/CtaBand.svelte",
+            "src/routes/+page.svelte",
+            "src/routes/about/+page.svelte",
+            "src/routes/blog/+page.svelte",
+            "src/routes/contact/+page.svelte",
+            "src/routes/ourcommunity/+page.svelte",
+            "src/routes/portfolio/+page.svelte",
+            "src/routes/services/+page.svelte"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "servicesWithText",
+          "line": 311,
+          "lines": 8,
+          "importedBy": [
+            "src/routes/+page.svelte",
+            "src/routes/services/+page.svelte"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "paragraphs",
+          "line": 321,
+          "lines": 6,
+          "importedBy": [
+            "src/routes/about/+page.svelte",
+            "src/routes/blog/+page.svelte",
+            "src/routes/contact/+page.svelte",
+            "src/routes/ourcommunity/+page.svelte",
+            "src/routes/portfolio/+page.svelte",
+            "src/routes/services/+page.svelte"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "lines",
+          "line": 329,
+          "lines": 6,
+          "importedBy": [
+            "src/routes/about/+page.svelte"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        }
+      ]
+    },
+    {
+      "file": "src/lib/brochure/defaults.ts",
+      "lines": 321,
+      "isView": false,
+      "blocks": [],
+      "functions": [
+        {
+          "name": "defaultBrochurePages",
+          "line": 22,
+          "lines": 300,
+          "importedBy": [
+            "src/lib/server/brochures.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        }
+      ]
+    },
+    {
+      "file": "src/routes/admin/brochure/+page.svelte",
+      "lines": 310,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<div class=\"head\">",
+          "firstLine": 20,
+          "lastLine": 32,
+          "lines": 13
+        },
+        {
+          "opens": "{#if showCreate}",
+          "firstLine": 52,
+          "lastLine": 76,
+          "lines": 25
+        },
+        {
+          "opens": "{#if data.brochures.length === 0 && !showCreate}",
+          "firstLine": 78,
+          "lastLine": 134,
+          "lines": 57
+        }
+      ],
+      "functions": [
+        {
+          "name": "fmtDate",
+          "line": 7,
+          "lines": 7,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": 78
+        }
+      ]
+    },
+    {
+      "file": "src/lib/brochure/templates.ts",
+      "lines": 303,
+      "isView": false,
+      "blocks": [],
+      "functions": [
+        {
+          "name": "templateName",
+          "line": 297,
+          "lines": 3,
+          "importedBy": [
+            "src/routes/admin/brochure/[id]/+page.svelte"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        }
+      ]
+    },
+    {
+      "file": "src/lib/server/db.ts",
+      "lines": 301,
+      "isView": false,
+      "blocks": [],
+      "functions": [
+        {
+          "name": "baseUrl",
+          "line": 113,
+          "lines": 3,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "serviceKey",
+          "line": 117,
+          "lines": 3,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "dbConfigured",
+          "line": 121,
+          "lines": 3,
+          "importedBy": [
+            "src/lib/server/badges.ts",
+            "src/lib/server/brochures.ts",
+            "src/lib/server/calculator.ts",
+            "src/lib/server/content.ts",
+            "src/lib/server/login-attempts.ts",
+            "src/lib/server/projects.ts",
+            "src/lib/server/slides.ts",
+            "src/lib/server/testimonials.ts",
+            "src/routes/about/+page.server.ts",
+            "src/routes/admin/+layout.server.ts",
+            "src/routes/admin/+page.server.ts",
+            "src/routes/admin/api/media/+server.ts",
+            "src/routes/admin/badges/+page.server.ts",
+            "src/routes/admin/brochure/+page.server.ts",
+            "src/routes/admin/brochure/[id]/page/[pageId]/+page.server.ts",
+            "src/routes/admin/content/+page.server.ts",
+            "src/routes/admin/content/[page]/+page.server.ts",
+            "src/routes/admin/enquiries/+page.server.ts",
+            "src/routes/admin/projects/+page.server.ts",
+            "src/routes/admin/rtw/+page.server.ts",
+            "src/routes/admin/slideshow/+page.server.ts",
+            "src/routes/admin/staff/+page.server.ts",
+            "src/routes/admin/testimonials/+page.server.ts",
+            "src/routes/api/contact/+server.ts",
+            "src/routes/brochure/print/[id]/+page.server.ts",
+            "src/routes/rtw/submit/+server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "headers",
+          "line": 125,
+          "lines": 8,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "restUrl",
+          "line": 134,
+          "lines": 3,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "check",
+          "line": 138,
+          "lines": 7,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "dbSelect",
+          "line": 146,
+          "lines": 5,
+          "importedBy": [
+            "src/lib/server/badges.ts",
+            "src/lib/server/brochures.ts",
+            "src/lib/server/calculator.ts",
+            "src/lib/server/content.ts",
+            "src/lib/server/login-attempts.ts",
+            "src/lib/server/projects.ts",
+            "src/lib/server/slides.ts",
+            "src/lib/server/testimonials.ts",
+            "src/routes/about/+page.server.ts",
+            "src/routes/admin/+page.server.ts",
+            "src/routes/admin/badges/+page.server.ts",
+            "src/routes/admin/content/+page.server.ts",
+            "src/routes/admin/content/[page]/+page.server.ts",
+            "src/routes/admin/enquiries/+page.server.ts",
+            "src/routes/admin/projects/+page.server.ts",
+            "src/routes/admin/projects/[id]/+page.server.ts",
+            "src/routes/admin/rtw/+page.server.ts",
+            "src/routes/admin/slideshow/+page.server.ts",
+            "src/routes/admin/staff/+page.server.ts",
+            "src/routes/admin/staff/[id]/+page.server.ts",
+            "src/routes/admin/testimonials/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "dbCount",
+          "line": 153,
+          "lines": 10,
+          "importedBy": [
+            "src/routes/admin/+layout.server.ts",
+            "src/routes/admin/+page.server.ts",
+            "src/routes/admin/enquiries/+page.server.ts",
+            "src/routes/admin/rtw/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "dbInsert",
+          "line": 164,
+          "lines": 10,
+          "importedBy": [
+            "src/lib/server/brochures.ts",
+            "src/lib/server/login-attempts.ts",
+            "src/routes/admin/badges/+page.server.ts",
+            "src/routes/admin/projects/+page.server.ts",
+            "src/routes/admin/slideshow/+page.server.ts",
+            "src/routes/admin/staff/+page.server.ts",
+            "src/routes/admin/testimonials/+page.server.ts",
+            "src/routes/api/contact/+server.ts",
+            "src/routes/rtw/submit/+server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "dbUpdate",
+          "line": 175,
+          "lines": 12,
+          "importedBy": [
+            "src/lib/server/brochures.ts",
+            "src/routes/admin/badges/+page.server.ts",
+            "src/routes/admin/brochure/[id]/+page.server.ts",
+            "src/routes/admin/enquiries/+page.server.ts",
+            "src/routes/admin/projects/+page.server.ts",
+            "src/routes/admin/projects/[id]/+page.server.ts",
+            "src/routes/admin/slideshow/+page.server.ts",
+            "src/routes/admin/staff/[id]/+page.server.ts",
+            "src/routes/admin/testimonials/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "dbUpdateWhere",
+          "line": 189,
+          "lines": 12,
+          "importedBy": [
+            "src/lib/server/brochures.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "dbUpsert",
+          "line": 203,
+          "lines": 15,
+          "importedBy": [
+            "src/routes/admin/calculator/+page.server.ts",
+            "src/routes/admin/content/[page]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "dbDelete",
+          "line": 219,
+          "lines": 7,
+          "importedBy": [
+            "src/lib/server/brochures.ts",
+            "src/routes/admin/badges/+page.server.ts",
+            "src/routes/admin/enquiries/+page.server.ts",
+            "src/routes/admin/projects/[id]/+page.server.ts",
+            "src/routes/admin/slideshow/+page.server.ts",
+            "src/routes/admin/staff/[id]/+page.server.ts",
+            "src/routes/admin/testimonials/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "dbDeleteWhere",
+          "line": 231,
+          "lines": 8,
+          "importedBy": [
+            "src/lib/server/login-attempts.ts",
+            "src/routes/admin/calculator/+page.server.ts",
+            "src/routes/admin/content/[page]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "storageSignedUpload",
+          "line": 246,
+          "lines": 19,
+          "importedBy": [
+            "src/routes/admin/api/media/+server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "storageList",
+          "line": 267,
+          "lines": 22,
+          "importedBy": [
+            "src/lib/server/brochures.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "storageUpload",
+          "line": 291,
+          "lines": 11,
+          "importedBy": [
+            "src/routes/admin/badges/+page.server.ts",
+            "src/routes/admin/projects/[id]/+page.server.ts",
+            "src/routes/admin/staff/[id]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        }
+      ]
+    },
+    {
+      "file": "src/lib/server/brochures.ts",
+      "lines": 300,
+      "isView": false,
+      "blocks": [],
+      "functions": [
+        {
+          "name": "listBrochures",
+          "line": 33,
+          "lines": 9,
+          "importedBy": [
+            "src/routes/admin/brochure/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "getBrochure",
+          "line": 43,
+          "lines": 12,
+          "importedBy": [
+            "src/routes/admin/brochure/[id]/+page.server.ts",
+            "src/routes/admin/brochure/[id]/page/[pageId]/+page.server.ts",
+            "src/routes/admin/brochure/[id]/pdf/+server.ts",
+            "src/routes/brochure/print/[id]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "getActiveBrochure",
+          "line": 57,
+          "lines": 14,
+          "importedBy": [
+            "src/routes/brochure/+page.server.ts",
+            "src/routes/brochure/pdf/+server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "fallbackBrochure",
+          "line": 73,
+          "lines": 20,
+          "importedBy": [
+            "src/routes/brochure/+page.server.ts",
+            "src/routes/brochure/print/[id]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "createBrochure",
+          "line": 96,
+          "lines": 18,
+          "importedBy": [
+            "src/routes/admin/brochure/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "duplicateBrochure",
+          "line": 115,
+          "lines": 17,
+          "importedBy": [
+            "src/routes/admin/brochure/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "touchBrochure",
+          "line": 133,
+          "lines": 3,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "setActiveBrochure",
+          "line": 138,
+          "lines": 4,
+          "importedBy": [
+            "src/routes/admin/brochure/+page.server.ts",
+            "src/routes/admin/brochure/[id]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "setDraftBrochure",
+          "line": 143,
+          "lines": 3,
+          "importedBy": [
+            "src/routes/admin/brochure/+page.server.ts",
+            "src/routes/admin/brochure/[id]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "deleteBrochure",
+          "line": 147,
+          "lines": 3,
+          "importedBy": [
+            "src/routes/admin/brochure/+page.server.ts",
+            "src/routes/admin/brochure/[id]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "nextSortOrder",
+          "line": 153,
+          "lines": 3,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "addPage",
+          "line": 157,
+          "lines": 16,
+          "importedBy": [
+            "src/routes/admin/brochure/[id]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "addProjectPages",
+          "line": 179,
+          "lines": 41,
+          "importedBy": [
+            "src/routes/admin/brochure/[id]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "updatePage",
+          "line": 221,
+          "lines": 8,
+          "importedBy": [
+            "src/routes/admin/brochure/[id]/page/[pageId]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "deletePage",
+          "line": 230,
+          "lines": 4,
+          "importedBy": [
+            "src/routes/admin/brochure/[id]/+page.server.ts",
+            "src/routes/admin/brochure/[id]/page/[pageId]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "duplicatePage",
+          "line": 235,
+          "lines": 12,
+          "importedBy": [
+            "src/routes/admin/brochure/[id]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "movePage",
+          "line": 249,
+          "lines": 18,
+          "importedBy": [
+            "src/routes/admin/brochure/[id]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "siteImageLibrary",
+          "line": 276,
+          "lines": 14,
+          "importedBy": [
+            "src/routes/admin/brochure/[id]/page/[pageId]/+page.server.ts",
+            "src/routes/admin/slideshow/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "uploadedImageLibrary",
+          "line": 292,
+          "lines": 9,
+          "importedBy": [
+            "src/routes/admin/brochure/[id]/page/[pageId]/+page.server.ts",
+            "src/routes/admin/slideshow/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        }
+      ]
+    },
+    {
+      "file": "src/routes/admin/content/[page]/+page.svelte",
+      "lines": 300,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "{#snippet field(f: ContentField)}",
+          "firstLine": 45,
+          "lastLine": 63,
+          "lines": 19
+        },
+        {
+          "opens": "{#if Object.keys(data.saved).length > 0}",
+          "firstLine": 121,
+          "lastLine": 132,
+          "lines": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "initial",
+          "line": 11,
+          "lines": 5,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "changed",
+          "line": 30,
+          "lines": 3,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": 45
+        },
+        {
+          "name": "rows",
+          "line": 34,
+          "lines": 5,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": 45
+        }
+      ]
+    },
+    {
+      "file": "src/routes/admin/badges/+page.svelte",
+      "lines": 298,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "{#if data.badges.length === 0}",
+          "firstLine": 37,
+          "lastLine": 94,
+          "lines": 58
+        },
+        {
+          "opens": "<form class=\"card add\" method=\"POST\" action=\"?/create\" enctype=\"multipart/form-d",
+          "firstLine": 97,
+          "lastLine": 109,
+          "lines": 13
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/routes/admin/slideshow/+page.svelte",
+      "lines": 288,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<ul class=\"list\">",
+          "firstLine": 64,
+          "lastLine": 121,
+          "lines": 58
+        }
+      ],
+      "functions": [
+        {
+          "name": "onpick",
+          "line": 16,
+          "lines": 5,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        }
+      ]
+    },
+    {
+      "file": "src/lib/data/projects.ts",
+      "lines": 269,
+      "isView": false,
+      "blocks": [],
+      "functions": []
+    },
+    {
+      "file": "src/routes/admin/rtw/+page.svelte",
+      "lines": 249,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "{#if !data.configured}",
+          "firstLine": 40,
+          "lastLine": 114,
+          "lines": 75
+        }
+      ],
+      "functions": [
+        {
+          "name": "ukDate",
+          "line": 4,
+          "lines": 5,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": 40
+        },
+        {
+          "name": "ukDateTime",
+          "line": 10,
+          "lines": 7,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": 40
+        },
+        {
+          "name": "outcomeClass",
+          "line": 18,
+          "lines": 5,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": 40
+        }
+      ]
+    },
+    {
+      "file": "src/routes/+page.svelte",
+      "lines": 247,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<section class=\"hero\">",
+          "firstLine": 45,
+          "lastLine": 58,
+          "lines": 14
+        },
+        {
+          "opens": "<section class=\"section\">",
+          "firstLine": 61,
+          "lastLine": 76,
+          "lines": 16
+        },
+        {
+          "opens": "<section class=\"section section--tint\">",
+          "firstLine": 79,
+          "lastLine": 98,
+          "lines": 20
+        },
+        {
+          "opens": "{#if data.testimonials.length > 0}",
+          "firstLine": 101,
+          "lastLine": 116,
+          "lines": 16
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/lib/components/admin/ImagePicker.svelte",
+      "lines": 243,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "{#if open}",
+          "firstLine": 64,
+          "lastLine": 130,
+          "lines": 67
+        }
+      ],
+      "functions": [
+        {
+          "name": "pick",
+          "line": 26,
+          "lines": 4,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": 64
+        },
+        {
+          "name": "uploadFiles",
+          "line": 31,
+          "lines": 31,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": 64
+        }
+      ]
+    },
+    {
+      "file": "src/routes/admin/projects/+page.svelte",
+      "lines": 232,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "{#if !data.configured}",
+          "firstLine": 24,
+          "lastLine": 79,
+          "lines": 56
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/routes/admin/+layout.svelte",
+      "lines": 216,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<div class=\"admin\" class:admin--login={onLogin}>",
+          "firstLine": 30,
+          "lastLine": 62,
+          "lines": 33
+        }
+      ],
+      "functions": [
+        {
+          "name": "isActive",
+          "line": 21,
+          "lines": 3,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": 30
+        }
+      ]
+    },
+    {
+      "file": "src/lib/components/ContactForm.svelte",
+      "lines": 196,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "{#if status === 'sent'}",
+          "firstLine": 43,
+          "lastLine": 107,
+          "lines": 65
+        }
+      ],
+      "functions": [
+        {
+          "name": "submit",
+          "line": 19,
+          "lines": 22,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": 43
+        }
+      ]
+    },
+    {
+      "file": "src/routes/about/+page.svelte",
+      "lines": 195,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<section class=\"section page-hero\">",
+          "firstLine": 24,
+          "lastLine": 35,
+          "lines": 12
+        },
+        {
+          "opens": "<section class=\"section section--tint\">",
+          "firstLine": 37,
+          "lastLine": 57,
+          "lines": 21
+        },
+        {
+          "opens": "<section class=\"section\">",
+          "firstLine": 59,
+          "lastLine": 80,
+          "lines": 22
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/routes/admin/staff/[id]/+page.svelte",
+      "lines": 195,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<form class=\"card editor\" method=\"POST\" action=\"?/save\" enctype=\"multipart/form-",
+          "firstLine": 21,
+          "lastLine": 55,
+          "lines": 35
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/lib/components/HeroSlideshow.svelte",
+      "lines": 184,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "{#if slides.length === 1}",
+          "firstLine": 39,
+          "lastLine": 78,
+          "lines": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "go",
+          "line": 34,
+          "lines": 3,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": 39
+        }
+      ]
+    },
+    {
+      "file": "src/lib/components/Header.svelte",
+      "lines": 169,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<header class=\"header\">",
+          "firstLine": 14,
+          "lastLine": 49,
+          "lines": 36
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/lib/components/Footer.svelte",
+      "lines": 165,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<footer class=\"footer\">",
+          "firstLine": 14,
+          "lastLine": 68,
+          "lines": 55
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/lib/components/brochure/PageProjectDetail.svelte",
+      "lines": 155,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<div class=\"pd\">",
+          "firstLine": 15,
+          "lastLine": 57,
+          "lines": 43
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/lib/components/Gallery.svelte",
+      "lines": 145,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "{#if lightboxIndex !== null}",
+          "firstLine": 42,
+          "lastLine": 60,
+          "lines": 19
+        }
+      ],
+      "functions": [
+        {
+          "name": "open",
+          "line": 11,
+          "lines": 3,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "closeLightbox",
+          "line": 15,
+          "lines": 3,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "step",
+          "line": 19,
+          "lines": 4,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "onKeydown",
+          "line": 24,
+          "lines": 6,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        }
+      ]
+    },
+    {
+      "file": "src/routes/admin/projects/[id]/+page.server.ts",
+      "lines": 144,
+      "isView": false,
+      "blocks": [],
+      "functions": [
+        {
+          "name": "slugify",
+          "line": 19,
+          "lines": 6,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "getProject",
+          "line": 26,
+          "lines": 8,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "load",
+          "line": 35,
+          "lines": 8,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        }
+      ]
+    },
+    {
+      "file": "src/lib/components/brochure/PageBackCover.svelte",
+      "lines": 140,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<div class=\"bc\">",
+          "firstLine": 6,
+          "lastLine": 47,
+          "lines": 42
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/routes/contact/+page.svelte",
+      "lines": 139,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<section class=\"section section--tint\">",
+          "firstLine": 47,
+          "lastLine": 83,
+          "lines": 37
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/routes/portfolio/+page.svelte",
+      "lines": 139,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<section class=\"section page-hero\">",
+          "firstLine": 19,
+          "lastLine": 39,
+          "lines": 21
+        },
+        {
+          "opens": "<section class=\"section section--tint\">",
+          "firstLine": 41,
+          "lastLine": 58,
+          "lines": 18
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/lib/server/auth.ts",
+      "lines": 134,
+      "isView": false,
+      "blocks": [],
+      "functions": [
+        {
+          "name": "b64url",
+          "line": 14,
+          "lines": 6,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "hmac",
+          "line": 21,
+          "lines": 11,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "safeEqual",
+          "line": 39,
+          "lines": 8,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "envTrim",
+          "line": 50,
+          "lines": 3,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "secret",
+          "line": 54,
+          "lines": 5,
+          "importedBy": [],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "credentialsConfigured",
+          "line": 60,
+          "lines": 3,
+          "importedBy": [
+            "src/routes/admin/login/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "checkCredentials",
+          "line": 70,
+          "lines": 13,
+          "importedBy": [
+            "src/routes/admin/login/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "createSessionToken",
+          "line": 84,
+          "lines": 4,
+          "importedBy": [
+            "src/routes/admin/login/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "verifySessionToken",
+          "line": 89,
+          "lines": 7,
+          "importedBy": [
+            "src/hooks.server.ts",
+            "src/routes/brochure/print/[id]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "createPrintToken",
+          "line": 104,
+          "lines": 5,
+          "importedBy": [
+            "src/routes/admin/brochure/[id]/pdf/+server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "verifyPrintToken",
+          "line": 110,
+          "lines": 10,
+          "importedBy": [
+            "src/routes/brochure/print/[id]/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "setSessionCookie",
+          "line": 121,
+          "lines": 10,
+          "importedBy": [
+            "src/routes/admin/login/+page.server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        },
+        {
+          "name": "clearSessionCookie",
+          "line": 132,
+          "lines": 3,
+          "importedBy": [
+            "src/routes/admin/logout/+server.ts"
+          ],
+          "sameBodyIn": [],
+          "movesWithBlockAtLine": null
+        }
+      ]
+    },
+    {
+      "file": "src/routes/admin/login/+page.svelte",
+      "lines": 134,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<div class=\"login\">",
+          "firstLine": 13,
+          "lastLine": 61,
+          "lines": 49
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/lib/components/brochure/PageTeam.svelte",
+      "lines": 127,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<div class=\"team bpage__body\">",
+          "firstLine": 14,
+          "lastLine": 44,
+          "lines": 31
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/routes/post/[slug]/+page.svelte",
+      "lines": 125,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<article class=\"section\">",
+          "firstLine": 24,
+          "lastLine": 61,
+          "lines": 38
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/routes/admin/content/+page.svelte",
+      "lines": 117,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<ul class=\"list\">",
+          "firstLine": 25,
+          "lastLine": 40,
+          "lines": 16
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/routes/[area]/+page.svelte",
+      "lines": 111,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "<section class=\"section page-hero\">",
+          "firstLine": 18,
+          "lastLine": 32,
+          "lines": 15
+        },
+        {
+          "opens": "{#if crossLinked}",
+          "firstLine": 42,
+          "lastLine": 54,
+          "lines": 13
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "src/routes/admin/staff/+page.svelte",
+      "lines": 102,
+      "isView": true,
+      "blocks": [
+        {
+          "opens": "{#if !data.configured}",
+          "firstLine": 18,
+          "lastLine": 40,
+          "lines": 23
+        }
+      ],
+      "functions": []
+    }
+  ],
+  "designPatterns": {
+    "name": "designPatterns",
+    "summary": {
+      "roleFamilies": 7,
+      "predictedFiles": 66,
+      "predictedFilesMissing": 0,
+      "entities": 0,
+      "entitiesOutOfRange": 0,
+      "measurementIsHeuristic": true
+    },
+    "offenders": {
+      "roleFamilies": {
+        "+page.server.ts": 26,
+        "+page.svelte": 34,
+        "+page.ts": 6,
+        "+server.ts": 9,
+        "field": 5,
+        "fields": 4,
+        "form": 6
+      },
+      "patterns": [
+        {
+          "pattern": "every +page.server.ts has a +page.svelte",
+          "predicted": 26,
+          "missing": []
+        },
+        {
+          "pattern": "every +page.ts has a +page.svelte",
+          "predicted": 6,
+          "missing": []
+        },
+        {
+          "pattern": "every +page.svelte has a +page.server.ts",
+          "predicted": 34,
+          "missing": []
+        }
+      ],
+      "missingPredictedFiles": [],
+      "entityFileCounts": []
+    }
+  }
+}
