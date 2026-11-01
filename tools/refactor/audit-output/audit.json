@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-01T07:27:14+00:00",
-  "kitVersion": "1.38.0",
+  "generatedAt": "2026-11-01T08:08:01+00:00",
+  "kitVersion": "1.39.0",
   "score": {
     "overall": 81.2,
     "groups": [
@@ -313,6 +313,7 @@
       "predictedFilesMissing": 0,
       "entities": 0,
       "entitiesOutOfRange": 0,
+      "entitiesAccepted": 0,
       "measurementIsHeuristic": true
     },
     "inventory": {
@@ -332,13 +333,13 @@
       "looserLimits": 0
     },
     "fileAreas": {
-      "totalFiles": 669,
+      "totalFiles": 661,
       "frontend": 244,
-      "tooling": 238,
+      "tooling": 234,
       "shared": 50,
       "backend": 46,
-      "docs": 31,
       "tests": 28,
+      "docs": 27,
       "infrastructure": 12,
       "database": 9,
       "api": 9,
@@ -2041,6 +2042,7 @@
         "predictedFilesMissing": 0,
         "entities": 0,
         "entitiesOutOfRange": 0,
+        "entitiesAccepted": 0,
         "measurementIsHeuristic": true
       },
       "offenders": {
@@ -2661,13 +2663,13 @@
     "fileAreas": {
       "name": "fileAreas",
       "summary": {
-        "totalFiles": 669,
+        "totalFiles": 661,
         "frontend": 244,
-        "tooling": 238,
+        "tooling": 234,
         "shared": 50,
         "backend": 46,
-        "docs": 31,
         "tests": 28,
+        "docs": 27,
         "infrastructure": 12,
         "database": 9,
         "api": 9,
@@ -2682,7 +2684,7 @@
         },
         {
           "area": "tooling",
-          "files": 238,
+          "files": 234,
           "sourceFiles": 0,
           "sourceLines": 0
         },
@@ -2699,14 +2701,14 @@
           "sourceLines": 2977
         },
         {
-          "area": "docs",
-          "files": 31,
+          "area": "tests",
+          "files": 28,
           "sourceFiles": 0,
           "sourceLines": 0
         },
         {
-          "area": "tests",
-          "files": 28,
+          "area": "docs",
+          "files": 27,
           "sourceFiles": 0,
           "sourceLines": 0
         },
