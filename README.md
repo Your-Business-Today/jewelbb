@@ -138,10 +138,10 @@ The Wix account can be cancelled once DNS has been moved.
 
 <table><tr><td align="center">
 <strong>Code quality score</strong><h2>81.2%</h2>
-<sub>measured 2026-11-01 · project-process kit 1.37.0</sub>
+<sub>measured 2026-11-01 · project-process kit 1.38.0</sub>
 </td></tr></table>
 
-659 files · frontend 244 · tooling 233 · shared 50 · backend 46 · tests 28 · docs 26 · infrastructure 12 · database 9 · api 9 · other 2
+669 files · frontend 244 · tooling 238 · shared 50 · backend 46 · docs 31 · tests 28 · infrastructure 12 · database 9 · api 9 · other 2
 
 <details>
 <summary><strong>How the 81.2% is made up</strong></summary>
@@ -177,21 +177,21 @@ Each element scores 100% with no offenders and falls in a straight line to 0% wh
 </details>
 
 <details>
-<summary><strong>The repository by area: 659 files</strong></summary>
+<summary><strong>The repository by area: 669 files</strong></summary>
 
 | Area | Files | Of which audited source | Source lines |
 | --- | --- | --- | --- |
 | frontend | 244 | 123 | 11,005 |
-| tooling | 233 | 0 | 0 |
+| tooling | 238 | 0 | 0 |
 | shared | 50 | 48 | 2,488 |
 | backend | 46 | 46 | 2,977 |
+| docs | 31 | 0 | 0 |
 | tests | 28 | 0 | 0 |
-| docs | 26 | 0 | 0 |
 | infrastructure | 12 | 0 | 0 |
 | database | 9 | 0 | 0 |
 | api | 9 | 9 | 344 |
 | other | 2 | 0 | 0 |
-| **whole repository** | **659** | **226** | **16,814** |
+| **whole repository** | **669** | **226** | **16,814** |
 
 </details>
 

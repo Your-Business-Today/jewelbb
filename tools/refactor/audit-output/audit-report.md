@@ -1,6 +1,6 @@
 # Refactor audit
 
-Generated 2026-11-01 07:05 UTC.
+Generated 2026-11-01 07:27 UTC.
 
 ## Headline
 
@@ -41,16 +41,16 @@ Each element scores 100% with no offenders and falls in a straight line to 0% wh
 | Area | Files | Of which audited source | Source lines |
 | --- | --- | --- | --- |
 | frontend | 244 | 123 | 11,005 |
-| tooling | 233 | 0 | 0 |
+| tooling | 238 | 0 | 0 |
 | shared | 50 | 48 | 2,488 |
 | backend | 46 | 46 | 2,977 |
+| docs | 31 | 0 | 0 |
 | tests | 28 | 0 | 0 |
-| docs | 26 | 0 | 0 |
 | infrastructure | 12 | 0 | 0 |
 | database | 9 | 0 | 0 |
 | api | 9 | 9 | 344 |
 | other | 2 | 0 | 0 |
-| **whole repository** | **659** | **226** | **16,814** |
+| **whole repository** | **669** | **226** | **16,814** |
 
 ## Summary
 
@@ -71,28 +71,28 @@ Each element scores 100% with no offenders and falls in a straight line to 0% wh
 | inventory | pages: 34, components: 79, orphanComponents: 11, averagePageLines: 158 |
 | siteDefinition | skipped: no siteDefinition catalogue in rules.json |
 | inputValidation | schemaTables: 11, limitedColumns: 0, writeDoors: 0, unvalidatedDoors: 0, looserLimits: 0 |
-| fileAreas | totalFiles: 659, frontend: 244, tooling: 233, shared: 50, backend: 46, tests: 28, docs: 26, infrastructure: 12, database: 9, api: 9, other: 2 |
+| fileAreas | totalFiles: 669, frontend: 244, tooling: 238, shared: 50, backend: 46, docs: 31, tests: 28, infrastructure: 12, database: 9, api: 9, other: 2 |
 
 ## Against the baseline
 
 | Ratcheted figure | Baseline | Now | Verdict |
 | --- | --- | --- | --- |
-| code quality score | 69.4% | 81.2% | — |
-| fileLength.filesOverLimit | 42 | 37 | better |
-| fileLength.worstFileLines | 1048 | 447 | better |
+| code quality score | 81.2% | 81.2% | — |
+| fileLength.filesOverLimit | 37 | 37 | held |
+| fileLength.worstFileLines | 447 | 447 | held |
 | functionShape.functionsOverLimit | 11 | 11 | held |
-| functionShape.elseBlocks | 10 | 6 | better |
-| duplication.duplicatedPercentage | None | 1.36 | — |
-| comments.explanatoryCommentLines | 148 | 115 | better |
-| magicValues.inlineHexColours | 244 | 222 | better |
+| functionShape.elseBlocks | 6 | 6 | held |
+| duplication.duplicatedPercentage | 1.36 | 1.36 | held |
+| comments.explanatoryCommentLines | 115 | 115 | held |
+| magicValues.inlineHexColours | 222 | 222 | held |
 | inventory.orphanComponents | 11 | 11 | held |
 | orphans.orphanFunctions | 0 | 0 | held |
-| prose.longMemberChainLines | 100 | 94 | better |
-| prose.deeplyIndentedLines | 724 | 273 | better |
+| prose.longMemberChainLines | 94 | 94 | held |
+| prose.deeplyIndentedLines | 273 | 273 | held |
 | functionNames.overlongFunctionNames | 0 | 0 | held |
 | accessorNames.gluedAccessorNames | 0 | 0 | held |
-| conditions.tangledConditionLines | 9 | 3 | better |
-| conditions.literalComparisonLines | 40 | 35 | better |
+| conditions.tangledConditionLines | 3 | 3 | held |
+| conditions.literalComparisonLines | 35 | 35 | held |
 | designPatterns.predictedFilesMissing | 0 | 0 | held |
 | siteDefinition.handRolledElements | None | None | — |
 | siteDefinition.boxedContentWidgets | None | None | — |
