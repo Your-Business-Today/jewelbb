@@ -1,0 +1,31 @@
+/* Ported from Jeremy's standalone portal, namespaced under .rtwp, and kept as a
+   plain stylesheet because several elements (radio options, summary rows,
+   banner states) are created or re-classed at runtime. */
+.rtwp {
+	--navy: #14213d;
+	--navy-2: #1d2f57;
+	--gold: #c9a227;
+	--bg: #eef0f4;
+	--tcard: #ffffff;
+	--tborder: #dce0e8;
+	--ttext: #1c2026;
+	--tmuted: #667085;
+	--green: #167a3d;
+	--green-bg: #e8f6ee;
+	--red: #b3261e;
+	--red-bg: #fdecea;
+	--amber: #935f00;
+	--amber-bg: #fff6df;
+	--tradius: 14px;
+	--tshadow: 0 1px 3px rgba(16, 24, 40, 0.07), 0 6px 18px rgba(16, 24, 40, 0.05);
+	background: var(--bg);
+	border-block: 1px solid var(--tborder);
+	color: var(--ttext);
+	line-height: 1.55;
+	padding: 26px 24px 70px;
+}
+
+.rtwp__inner {
+	max-width: 860px;
+	margin: 0 auto;
+}

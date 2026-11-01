@@ -132,3 +132,87 @@ The Wix account can be cancelled once DNS has been moved.
   `src/lib/data/projects.ts` is the fallback used until Supabase is connected).
 - All pages are prerendered (static) except `/api/contact` (serverless function for the form).
 - The sitemap is generated at build time at `/sitemap.xml`.
+
+<!-- code-quality:start -->
+## Code quality
+
+<table><tr><td align="center">
+<strong>Code quality score</strong><h2>81.2%</h2>
+<sub>measured 2026-11-01 · project-process kit 1.38.0</sub>
+</td></tr></table>
+
+669 files · frontend 244 · tooling 238 · shared 50 · backend 46 · docs 31 · tests 28 · infrastructure 12 · database 9 · api 9 · other 2
+
+<details>
+<summary><strong>How the 81.2% is made up</strong></summary>
+
+| Element | Reading | Score | Weight | 0% at |
+| --- | --- | --- | --- | --- |
+| **Standard baseline checks** | | **75.6%** | **60** | |
+| Files over the line limit | 37 in 226 files | 67.3% | 10 | 50% of files |
+| Worst file, in limits over | 3.47 | 61.4% | 5 | 9 |
+| Functions over the line limit | 11 in 265 functions | 83.4% | 8 | 25% of functions |
+| Else blocks | 6 in 417 branches | 97.1% | 5 | 50% of branches |
+| Duplication % | 1.36 | 93.2% | 8 | 20 |
+| Explanatory comment lines | 115 in 16.81 thousand lines | 86.3% | 4 | 50 per thousand lines |
+| Inline magic values | 225 in 16.81 thousand lines | 33.1% | 4 | 20 per thousand lines |
+| Orphan components and functions | 11 in 344 components and functions | 68.0% | 4 | 10% of components and functions |
+| Long member chain lines | 94 in 16.81 thousand lines | 81.4% | 4 | 30 per thousand lines |
+| Deeply indented lines | 273 in 16.81 thousand lines | 45.9% | 4 | 30 per thousand lines |
+| Overlong function names | 0 in 265 functions | 100.0% | 4 | 10% of functions |
+| **Design pattern file count** | | **100.0%** | **10** | |
+| Files the patterns predict but are missing | 0 in 66 predicted files | 100.0% | 10 | 50% of predicted files |
+| Entities outside their expected file count | not measured | not measured | — | 50% of entities |
+| **Prose** | | **88.8%** | **20** | |
+| Conditions with calls tangled inside calls | 3 in 417 branches | 97.1% | 8 | 25% of branches |
+| Conditions compared to a raw literal | 35 in 417 branches | 66.4% | 6 | 25% of branches |
+| Accessor names that want to be a property | 0 in 265 functions | 100.0% | 6 | 10% of functions |
+| **Widget adoption** | | **not measured** | **0** | |
+| Markup written by hand where a widget should be | not measured | not measured | — | 50% of widget slots |
+| **Input validation** | | **not measured** | **0** | |
+| Doors that write without checking their input against the columns | not measured | not measured | — | 50% of write doors |
+
+Each element scores 100% with no offenders and falls in a straight line to 0% when its offenders, measured against the size of the codebase, reach the figure in the last column. The score is the weighted average of the elements that could be measured; an element that could not be measured lends its weight to the rest. Weights and zero points are set in `tools/refactor/rules.json` under `score.elements`. The offenders behind every reading are in `tools/refactor/audit-output/audit.json`.
+
+</details>
+
+<details>
+<summary><strong>The repository by area: 669 files</strong></summary>
+
+| Area | Files | Of which audited source | Source lines |
+| --- | --- | --- | --- |
+| frontend | 244 | 123 | 11,005 |
+| tooling | 238 | 0 | 0 |
+| shared | 50 | 48 | 2,488 |
+| backend | 46 | 46 | 2,977 |
+| docs | 31 | 0 | 0 |
+| tests | 28 | 0 | 0 |
+| infrastructure | 12 | 0 | 0 |
+| database | 9 | 0 | 0 |
+| api | 9 | 9 | 344 |
+| other | 2 | 0 | 0 |
+| **whole repository** | **669** | **226** | **16,814** |
+
+</details>
+
+<details>
+<summary><strong>The refactoring plan: 47 steps, in order</strong></summary>
+
+**Pass 2 — Component breakout**
+
+1. Break `src/routes/admin/+page.svelte` (447 lines) into components. Component-sized blocks: lines 99–113 (15 lines); lines 115–142 (28 lines); lines 144–158 (15 lines, taking when); lines 162–179 (18 lines).
+2. Break `src/routes/admin/projects/[id]/+page.svelte` (383 lines) into components. Component-sized blocks: lines 34–94 (61 lines); lines 96–146 (51 lines).
+3. Break `src/routes/admin/brochure/[id]/+page.svelte` (378 lines) into components. Component-sized blocks: lines 22–56 (35 lines); lines 58–79 (22 lines); lines 81–130 (50 lines, taking pageTitle).
+4. Break `src/routes/admin/brochure/+page.svelte` (310 lines) into components. Component-sized blocks: lines 20–32 (13 lines); lines 52–76 (25 lines); lines 78–134 (57 lines, taking fmtDate).
+5. Break `src/routes/admin/content/[page]/+page.svelte` (300 lines) into components. Component-sized blocks: lines 45–63 (19 lines, taking changed, rows); lines 121–132 (12 lines).
+6. Break `src/routes/admin/badges/+page.svelte` (298 lines) into components. Component-sized blocks: lines 37–94 (58 lines); lines 97–109 (13 lines).
+7. Break `src/routes/admin/slideshow/+page.svelte` (288 lines) into components. Component-sized blocks: lines 64–121 (58 lines).
+8. Break `src/routes/admin/rtw/+page.svelte` (249 lines) into components. Component-sized blocks: lines 40–114 (75 lines, taking ukDate, ukDateTime, outcomeClass).
+9. Break `src/routes/+page.svelte` (247 lines) into components. Component-sized blocks: lines 45–58 (14 lines); lines 61–76 (16 lines); lines 79–98 (20 lines); lines 101–116 (16 lines).
+10. Break `src/lib/components/admin/ImagePicker.svelte` (243 lines) into components. Component-sized blocks: lines 64–130 (67 lines, taking pick, uploadFiles).
+
+… and 37 more steps. The whole plan, with the measured detail, is in [`tools/refactor/refactor-plan.md`](tools/refactor/refactor-plan.md).
+
+</details>
+
+<!-- code-quality:end -->

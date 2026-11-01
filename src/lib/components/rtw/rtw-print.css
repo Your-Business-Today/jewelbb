@@ -1,0 +1,46 @@
+@media print {
+	.rtwp .rail,
+	.rtwp .no-print,
+	.rtwp .tbtn,
+	.rtwp #step1,
+	.rtwp #step2,
+	.rtwp #step3,
+	.rtwp #step4,
+	.rtwp #step5,
+	.rtwp #step6 {
+		display: none !important;
+	}
+
+	.rtwp {
+		background: #fff;
+		border: none;
+		padding: 0;
+	}
+
+	.rtwp__inner {
+		max-width: 100%;
+	}
+
+	.rtwp .card {
+		border: 1px solid #999;
+		box-shadow: none;
+		break-inside: avoid;
+	}
+
+	.rtwp #printhead {
+		display: block !important;
+		padding: 0 0 12px;
+	}
+
+	.rtwp #printhead h1 {
+		font-size: 1.1rem;
+		color: #14213d;
+		margin: 0;
+	}
+
+	.rtwp #printhead p {
+		font-size: 0.78rem;
+		color: #555;
+		margin: 0;
+	}
+}

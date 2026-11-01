@@ -1,0 +1,74 @@
+.rtwp label {
+	display: block;
+	font-size: 0.8rem;
+	font-weight: 650;
+	margin: 14px 0 5px;
+	color: #344054;
+}
+
+.rtwp input[type='text'],
+.rtwp input[type='date'] {
+	width: 100%;
+	padding: 10px 12px;
+	border: 1.5px solid var(--tborder);
+	border-radius: 9px;
+	font-size: 0.95rem;
+	font-family: inherit;
+	background: #fff;
+	transition:
+		border-color 0.15s,
+		box-shadow 0.15s;
+}
+
+.rtwp input:focus {
+	outline: none;
+	border-color: var(--navy);
+	box-shadow: 0 0 0 3px rgba(20, 33, 61, 0.12);
+}
+
+.rtwp .grid2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0 16px;
+}
+
+@media (max-width: 560px) {
+	.rtwp .grid2 {
+		grid-template-columns: 1fr;
+	}
+}
+
+.rtwp .checkitem {
+	display: flex;
+	gap: 12px;
+	align-items: flex-start;
+	padding: 11px 0;
+	border-bottom: 1px solid #f1f3f6;
+	font-size: 0.9rem;
+	font-weight: 400;
+	cursor: pointer;
+	color: var(--ttext);
+}
+
+.rtwp .checkitem:last-of-type {
+	border-bottom: none;
+}
+
+.rtwp .checkitem input {
+	margin-top: 3px;
+	width: 17px;
+	height: 17px;
+	flex-shrink: 0;
+	accent-color: var(--navy);
+}
+
+.rtwp a {
+	color: var(--navy-2);
+	font-weight: 600;
+}
+
+.rtwp .muted {
+	color: var(--tmuted);
+	font-size: 0.82rem;
+	margin-top: 8px;
+}
