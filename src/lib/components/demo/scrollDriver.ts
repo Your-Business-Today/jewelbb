@@ -20,15 +20,18 @@ function showFinishedHouse(elements: BuildElements, render: (progress: number) =
 	render(1);
 }
 
+function scrollProgress({ track, stage }: BuildElements) {
+	const rect = track.getBoundingClientRect();
+	const total = track.offsetHeight - stage.offsetHeight;
+	return total > 0 ? clamp(-rect.top / total) : 1;
+}
+
 function listenForScroll(elements: BuildElements, render: (progress: number) => void) {
-	const { track, stage } = elements;
 	let lastProgress = -1;
 	let isTicking = false;
 	const update = () => {
 		isTicking = false;
-		const rect = track.getBoundingClientRect();
-		const total = track.offsetHeight - stage.offsetHeight;
-		const progress = total > 0 ? clamp(-rect.top / total) : 1;
+		const progress = scrollProgress(elements);
 		if (progress === lastProgress) return;
 		lastProgress = progress;
 		render(progress);

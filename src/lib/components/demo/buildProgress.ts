@@ -17,5 +17,7 @@ export function percentComplete(progress: number) {
 }
 
 export function setStyle(element: Element | null, name: string, value: string | number) {
-	if (element) (element as HTMLElement).style.setProperty(name, String(value));
+	if (!element) return;
+	const { style } = element as HTMLElement;
+	style.setProperty(name, String(value));
 }
