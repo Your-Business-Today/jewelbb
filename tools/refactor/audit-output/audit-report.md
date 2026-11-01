@@ -1,6 +1,6 @@
 # Refactor audit
 
-Generated 2026-11-01 08:08 UTC.
+Generated 2026-11-01 10:20 UTC.
 
 ## Headline
 
@@ -41,16 +41,16 @@ Each element scores 100% with no offenders and falls in a straight line to 0% wh
 | Area | Files | Of which audited source | Source lines |
 | --- | --- | --- | --- |
 | frontend | 244 | 123 | 11,005 |
-| tooling | 234 | 0 | 0 |
+| tooling | 103 | 0 | 0 |
 | shared | 50 | 48 | 2,488 |
 | backend | 46 | 46 | 2,977 |
-| tests | 28 | 0 | 0 |
 | docs | 27 | 0 | 0 |
+| tests | 15 | 0 | 0 |
 | infrastructure | 12 | 0 | 0 |
 | database | 9 | 0 | 0 |
 | api | 9 | 9 | 344 |
 | other | 2 | 0 | 0 |
-| **whole repository** | **661** | **226** | **16,814** |
+| **whole repository** | **517** | **226** | **16,814** |
 
 ## Summary
 
@@ -71,7 +71,7 @@ Each element scores 100% with no offenders and falls in a straight line to 0% wh
 | inventory | pages: 34, components: 79, orphanComponents: 11, averagePageLines: 158 |
 | siteDefinition | skipped: no siteDefinition catalogue in rules.json |
 | inputValidation | schemaTables: 11, limitedColumns: 0, writeDoors: 0, unvalidatedDoors: 0, looserLimits: 0 |
-| fileAreas | totalFiles: 661, frontend: 244, tooling: 234, shared: 50, backend: 46, tests: 28, docs: 27, infrastructure: 12, database: 9, api: 9, other: 2 |
+| fileAreas | totalFiles: 517, frontend: 244, tooling: 103, shared: 50, backend: 46, docs: 27, tests: 15, infrastructure: 12, database: 9, api: 9, other: 2 |
 
 ## Against the baseline
 
