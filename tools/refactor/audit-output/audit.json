@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-29T20:47:37+00:00",
-  "kitVersion": "1.37.0",
+  "generatedAt": "2026-11-01T07:01:05+00:00",
+  "kitVersion": "1.38.0",
   "score": {
-    "overall": 69.4,
+    "overall": 71.6,
     "groups": [
       {
         "group": "Standard baseline checks",
-        "score": 57.6,
-        "weight": 52
+        "score": 62.4,
+        "weight": 60
       },
       {
         "group": "Design pattern file count",
@@ -86,9 +86,10 @@
         "weight": 8,
         "zeroAt": 20,
         "unit": "",
-        "isMeasured": false,
-        "offenders": null,
-        "score": null
+        "isMeasured": true,
+        "offenders": 1.27,
+        "measuredAgainst": 1,
+        "score": 93.7
       },
       {
         "key": "comments",
@@ -272,7 +273,10 @@
       "measurementIsHeuristic": true
     },
     "duplication": {
-      "skipped": "jscpd is not installed (npm install -g jscpd)"
+      "clones": 22,
+      "duplicatedLines": 342,
+      "totalLines": 26957,
+      "duplicatedPercentage": 1.27
     },
     "naming": {
       "bannedAbbreviationHits": 167,
@@ -2644,9 +2648,73 @@
     "duplication": {
       "name": "duplication",
       "summary": {
-        "skipped": "jscpd is not installed (npm install -g jscpd)"
+        "clones": 22,
+        "duplicatedLines": 342,
+        "totalLines": 26957,
+        "duplicatedPercentage": 1.27
       },
-      "offenders": []
+      "offenders": [
+        {
+          "file": "src/routes/blog/+page.svelte",
+          "duplicatedLineInstances": 86
+        },
+        {
+          "file": "src/routes/admin/projects/[id]/+page.svelte",
+          "duplicatedLineInstances": 75
+        },
+        {
+          "file": "src/routes/admin/projects/+page.svelte",
+          "duplicatedLineInstances": 67
+        },
+        {
+          "file": "src/routes/admin/brochure/[id]/+page.svelte",
+          "duplicatedLineInstances": 57
+        },
+        {
+          "file": "src/routes/admin/content/[page]/+page.svelte",
+          "duplicatedLineInstances": 57
+        },
+        {
+          "file": "src/routes/admin/staff/[id]/+page.svelte",
+          "duplicatedLineInstances": 55
+        },
+        {
+          "file": "src/routes/admin/staff/+page.svelte",
+          "duplicatedLineInstances": 50
+        },
+        {
+          "file": "src/routes/admin/testimonials/+page.svelte",
+          "duplicatedLineInstances": 44
+        },
+        {
+          "file": "src/routes/admin/brochure/+page.svelte",
+          "duplicatedLineInstances": 41
+        },
+        {
+          "file": "src/routes/admin/calculator/+page.svelte",
+          "duplicatedLineInstances": 33
+        },
+        {
+          "file": "src/routes/admin/badges/+page.svelte",
+          "duplicatedLineInstances": 32
+        },
+        {
+          "file": "src/routes/contact/+page.svelte",
+          "duplicatedLineInstances": 31
+        },
+        {
+          "file": "src/routes/services/+page.svelte",
+          "duplicatedLineInstances": 26
+        },
+        {
+          "file": "src/routes/ourcommunity/+page.svelte",
+          "duplicatedLineInstances": 25
+        },
+        {
+          "file": "src/routes/admin/enquiries/+page.svelte",
+          "duplicatedLineInstances": 21
+        }
+      ]
     }
   }
 }
