@@ -8,7 +8,7 @@
 
 <Seo
 	title="House cost calculator | Jewel Bespoke Build"
-	description="Get an instant estimate of what your new build, extension or renovation could cost, in a minute and without speaking to anyone."
+	description="Get an instant estimate of what your new build, extension, renovation or conversion could cost, in a minute and without speaking to anyone."
 />
 
 <section class="section page-hero">
