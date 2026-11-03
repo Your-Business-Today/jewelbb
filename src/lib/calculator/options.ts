@@ -1,7 +1,8 @@
 export const ProjectTypes = [
 	{ value: 'new_build', label: 'New build' },
 	{ value: 'extension', label: 'Extension' },
-	{ value: 'renovation', label: 'Renovation or conversion' }
+	{ value: 'renovation', label: 'Renovation' },
+	{ value: 'conversion', label: 'Conversion (garage, loft)' }
 ] as const;
 
 export const SpecLevels = [
