@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { inPounds } from '$lib/calculator/money';
+	import { vatNote } from '$lib/calculator/vat';
 	import { estimateBasis, estimateQuery } from '$lib/calculator/estimateBasis';
 	import HouseModel from '$lib/components/calculator/HouseModel.svelte';
 	import type { Estimate, EstimateSettings } from '$lib/calculator/estimate';
@@ -13,6 +14,7 @@
 	<span class="kicker">Your estimate</span>
 	<p class="estimate__range">{inPounds(estimate.low)} to {inPounds(estimate.high)}</p>
 	<p class="estimate__basis">{estimateBasis(estimate.details)}</p>
+	<p class="estimate__basis">{vatNote(estimate.vatPercent)}</p>
 	<HouseModel details={estimate.details} />
 	<p class="estimate__disclaimer">{settings.disclaimer}</p>
 	<div class="estimate__actions">

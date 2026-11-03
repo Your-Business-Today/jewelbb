@@ -2,6 +2,7 @@
 	import { images } from '$lib/data/images';
 	import { site } from '$lib/data/site';
 	import { inPounds } from '$lib/calculator/money';
+	import { vatNote } from '$lib/calculator/vat';
 	import { estimateBasis } from '$lib/calculator/estimateBasis';
 	import type { Estimate, EstimateSettings } from '$lib/calculator/estimate';
 
@@ -15,6 +16,7 @@
 	<span class="kicker">Your project estimate</span>
 	<h1 class="sheet__range">{inPounds(estimate.low)} to {inPounds(estimate.high)}</h1>
 	<p class="sheet__basis">{estimateBasis(estimate.details)}</p>
+	<p class="sheet__basis">{vatNote(estimate.vatPercent)}</p>
 	<p class="sheet__date">Prepared on {preparedOn}</p>
 	<p class="sheet__disclaimer">{settings.disclaimer}</p>
 	<footer class="sheet__contact">
