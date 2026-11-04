@@ -13,6 +13,8 @@
 <h1>Cost calculator</h1>
 <p class="intro">
 	The rates behind the cost calculator at <a href="/cost-calculator" target="_blank" rel="noopener">/cost-calculator</a>.
+	Enter each rate per m² excluding VAT: visitors see their estimate with VAT added at 20%, except new builds, which
+	are shown zero-rated.
 	Leave a rate empty to stop offering that project type and finish online. The calculator stays hidden until at
 	least one rate and the disclaimer are saved.
 </p>

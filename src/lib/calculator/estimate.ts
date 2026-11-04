@@ -1,4 +1,5 @@
 import type { ProjectType, SpecLevel } from '$lib/calculator/options';
+import { includingVat, vatPercentFor } from '$lib/calculator/vat';
 
 export interface RateRow {
 	project_type: ProjectType;
@@ -27,6 +28,7 @@ export interface Estimate {
 	details: VisitorDetails;
 	low: number;
 	high: number;
+	vatPercent: number;
 }
 
 const percent = 100;
@@ -44,7 +46,8 @@ export function rateFor(rates: RateRow[], details: Pick<VisitorDetails, 'project
 }
 
 export function estimateFor(details: VisitorDetails, rate: RateRow, settings: EstimateSettings): Estimate {
-	const middle = details.floorArea * rate.rate_per_square_metre;
+	const vatPercent = vatPercentFor(details.projectType);
+	const middle = includingVat(details.floorArea * rate.rate_per_square_metre, vatPercent);
 	const spread = middle * (settings.range_percent / percent);
-	return { details, low: roundedToStep(middle - spread), high: roundedToStep(middle + spread) };
+	return { details, low: roundedToStep(middle - spread), high: roundedToStep(middle + spread), vatPercent };
 }
