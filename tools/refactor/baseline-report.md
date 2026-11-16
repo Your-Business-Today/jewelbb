@@ -1,6 +1,6 @@
 # Refactor audit
 
-Generated 2026-11-05 22:07 UTC.
+Generated 2026-11-16 12:19 UTC.
 
 ## Headline
 
@@ -34,23 +34,23 @@ Generated 2026-11-05 22:07 UTC.
 | **Input validation** | | **not measured** | **0** | |
 | Doors that write without checking their input against the columns | not measured | not measured | — | 50% of write doors |
 
-Each element scores 100% with no offenders and falls in a straight line to 0% when its offenders, measured against the size of the codebase, reach the figure in the last column. The score is the weighted average of the elements that could be measured; an element that could not be measured lends its weight to the rest. Weights and zero points are set in `tools/refactor/rules.json` under `score.elements`. The offenders behind every reading are in `tools/refactor/audit-output/audit.json`.
+Each element scores 100% with no offenders and falls in a straight line to 0% when its offenders, measured against the size of the codebase, reach the figure in the last column. The score is the weighted average of the elements that could be measured; an element that could not be measured lends its weight to the rest. Weights and zero points are set in `tools/refactor/rules.json` under `score.elements`. The offenders behind every reading are in `tools/refactor/audit-output/audit.json` once the audit has run there; git ignores it.
 
 ## The repository by area
 
 | Area | Files | Of which audited source | Source lines |
 | --- | --- | --- | --- |
 | frontend | 244 | 123 | 11,011 |
-| tooling | 104 | 0 | 0 |
+| tooling | 126 | 0 | 0 |
 | shared | 51 | 49 | 2,518 |
 | backend | 46 | 46 | 2,977 |
-| docs | 27 | 0 | 0 |
-| tests | 15 | 0 | 0 |
+| docs | 26 | 0 | 0 |
+| tests | 21 | 0 | 0 |
 | infrastructure | 12 | 0 | 0 |
 | database | 11 | 0 | 0 |
 | api | 9 | 9 | 344 |
 | other | 2 | 0 | 0 |
-| **whole repository** | **521** | **227** | **16,850** |
+| **whole repository** | **548** | **227** | **16,850** |
 
 ## Summary
 
@@ -71,18 +71,18 @@ Each element scores 100% with no offenders and falls in a straight line to 0% wh
 | inventory | pages: 34, components: 79, orphanComponents: 11, averagePageLines: 158 |
 | siteDefinition | skipped: no siteDefinition catalogue in rules.json |
 | inputValidation | schemaTables: 11, limitedColumns: 0, writeDoors: 0, unvalidatedDoors: 0, looserLimits: 0 |
-| fileAreas | totalFiles: 521, frontend: 244, tooling: 104, shared: 51, backend: 46, docs: 27, tests: 15, infrastructure: 12, database: 11, api: 9, other: 2 |
+| fileAreas | totalFiles: 548, frontend: 244, tooling: 126, shared: 51, backend: 46, docs: 26, tests: 21, infrastructure: 12, database: 11, api: 9, other: 2 |
 
 ## Against the baseline
 
 | Ratcheted figure | Baseline | Now | Verdict |
 | --- | --- | --- | --- |
-| code quality score | 81.2% | 81.3% | — |
+| code quality score | 81.3% | 81.3% | — |
 | fileLength.filesOverLimit | 37 | 37 | held |
 | fileLength.worstFileLines | 447 | 447 | held |
 | functionShape.functionsOverLimit | 11 | 11 | held |
 | functionShape.elseBlocks | 6 | 6 | held |
-| duplication.duplicatedPercentage | 1.36 | 1.35 | better |
+| duplication.duplicatedPercentage | 1.35 | 1.35 | held |
 | comments.explanatoryCommentLines | 115 | 115 | held |
 | magicValues.inlineHexColours | 222 | 222 | held |
 | inventory.orphanComponents | 11 | 11 | held |
